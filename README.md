@@ -1,6 +1,6 @@
 # Monkey: Image Resolution and Text Label Are Important Things for Large Multi-modal Models
 
-![](C:/Users/31311/Desktop/研究生工作/金山合作/Monkey/Monkey/images/logo_monkey.png)
+![](images/logo_monkey.png)
 
 <div align="center">
 Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, Yuliang Liu†, Xiang Bai
@@ -22,7 +22,7 @@ Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, 
 
 ## performance
 
-![](C:/Users/31311/Desktop/研究生工作/金山合作/Monkey/Monkey/images/radar.png)
+![](images/radar.png)
 
 ## Demo
 
@@ -30,13 +30,13 @@ We have a demo open for everyone to play.[Demo](https://74a00f7621c2ecf691.gradi
 
 ## Cases
 
-Our model is able to accurately describe almost all the details in the image.
+Our model can accurately describe almost all the details in the image.
 
-![](C:/Users/31311/Desktop/研究生工作/金山合作/Monkey/Monkey/images/caption_1.png)
+![](images/caption_1.png)
 
 Besides, our model has also demonstrated some capabilities in fine-grained question answering and even answering questions involving world knowledge.
 
-![](C:/Users/31311/Desktop/研究生工作/金山合作/Monkey/Monkey/images/qa_1.png)
+![](images/qa_1.png)
 
 With the power of large-scale architecture, we have also achieved impressive performance on document-based tasks.
 
