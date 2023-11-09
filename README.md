@@ -12,7 +12,9 @@ Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, 
 <div align="center">
 *Equal Contribution; † Corresponding Author
 </div>
----
+
+-----
+
 **Monkey** introduces a resource-efficient method to enhance input resolution within the LMM paradigm. Using the wealth of excellent open-source efforts, we eschew the laborious pre-training phase by using existing LMMs(Qwen-VL). We propose a simple but effective module that segments high-resolution images into smaller, local segments via a sliding window technique. Each segment is encoded independently using a static visual encoder, enriched with various LoRA adjustments, and a trainable visual resampler. These segmented encodings are subsequently amalgamated and presented to the language decoder, complemented by a resized global image feature to maintain overall structural integrity. In parallel, we’ve developed a hierarchical pipeline for enhancing caption data quality, good at generating detailed image descriptions that encapsulate local elements, textual content, and the broader structural context.
 
 ## Spotlights
