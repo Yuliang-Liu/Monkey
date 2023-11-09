@@ -49,3 +49,6 @@ With the power of large-scale architecture, we have also achieved impressive per
 
 [Qwen-VL](https://github.com/QwenLM/Qwen-VL.git): the codebase we built upon. Thanks for the authors of Qwen for providing the framework.
 
+## Copyright
+
+For commercial purpose usage, please contact Dr. Yuliang Liu: ylliu@hust.edu.cn
