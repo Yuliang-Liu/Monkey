@@ -1,21 +1,26 @@
 # Monkey: Image Resolution and Text Label Are Important Things for Large Multi-modal Models
 
 
-<div align=center><img src="images/logo_monkey.png"></div>
+<br>
+<p align="center">
+    <img src="images/logo_monkey.png" width="300"/>
+<p>
+<br>
 
 <div align="center">
-Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, Yuliang Liu†, Xiang Bai
+Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, Yuliang Liu†, Xiang Bai*
 </div>
 <div align="center">
 <strong>Huazhong University of Science and Technology, Kingsoft</strong>
 </div>
-<div align="center">
-*Equal Contribution; † Corresponding Author
-</div>
+
+<p align="center">
+<a href="updating">Paper</a>&nbsp&nbsp | &nbsp&nbsp<a href="https://53965e0026f6da5097.gradio.live">Demo</a>&nbsp&nbsp | &nbsp&nbsp<a href="Monkey Model">Monkey Models</a>&nbsp ｜ &nbsp <a href="updating">Tutorial</a>
+</p>
 
 -----
 
-**Monkey** introduces a resource-efficient method to enhance input resolution within the LMM paradigm. Using the wealth of excellent open-source efforts, we eschew the laborious pre-training phase by using existing LMMs(Qwen-VL). We propose a simple but effective module that segments high-resolution images into smaller, local segments via a sliding window technique. Each segment is encoded independently using a static visual encoder, enriched with various LoRA adjustments, and a trainable visual resampler. These segmented encodings are subsequently amalgamated and presented to the language decoder, complemented by a resized global image feature to maintain overall structural integrity. In parallel, we’ve developed a hierarchical pipeline for enhancing caption data quality, good at generating detailed image descriptions that encapsulate local elements, textual content, and the broader structural context.
+**Monkey** brings a training-efficient approach to effectively improve the input resolution capacity up to 896 x 1344 pixels without pretraining from the start. To bridge the gap between simple text labels and high input resolution, we propose a multi-level description generation method, which automatically provides rich information that can guide the model to learn the contextual association between scenes and objects. With the synergy of these two designs, our model achieved excellent results on multiple benchmarks. By comparing our model with various LMMs, including GPT4V, our model demonstrates promising performance in image captioning by paying attention to textual information and capturing fine details within the images; its improved input resolution also enables remarkable performance in document images with dense text. 
 
 ## Spotlights
 
@@ -25,11 +30,15 @@ Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, 
 
 ## performance
 
-![](images/performance.png)
-
+<br>
+<p align="center">
+    <img src="images/performance.png" width="800"/>
+<p>
+<br>
+  
 ## Demo
 
-We have a demo open for everyone to play.[Demo](https://74a00f7621c2ecf691.gradio.live/ )
+We have a demo open for everyone to play. [Demo](https://53965e0026f6da5097.gradio.live)
 
 ## Cases
 
