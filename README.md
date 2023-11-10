@@ -42,22 +42,44 @@ We have a demo open for everyone to play. [Demo](https://53965e0026f6da5097.grad
 
 ## Cases
 
-Our model can accurately describe almost all the details in the image.
+Our model can accurately describe the details in the image.
 
-![](images/caption_1.png)
+<br>
+<p align="center">
+    <img src="images/caption_1.png" width="700"/>
+<p>
+<br>
+    
+Besides, our model has also demonstrated some capabilities in fine-grained question answering.
 
-Besides, our model has also demonstrated some capabilities in fine-grained question answering and even answering questions involving world knowledge.
+<br>
+<p align="center">
+    <img src="images/qa_1.png" width="700"/>
+<p>
+<br>
 
-![](images/qa_1.png)
+We have also achieved impressive performance on document-based tasks.
 
-With the power of large-scale architecture, we have also achieved impressive performance on document-based tasks.
+<br>
+<p align="center">
+    <img src="images/Doc_Chart.png" width="700"/>
+<p>
+<br>
 
-![](images/Doc_Chart.png)
+We qualitatively compare with existing LMMs including GPT4V, Qwen-vl, etc, which shows inspiring results. One can have a try using the provided demo. 
 
+<br>
+<p align="center">
+    <img src="images/compare.png" width="800"/>
+<p>
+<br>
+    
 ## Acknowledgement
 
+    
 [Qwen-VL](https://github.com/QwenLM/Qwen-VL.git): the codebase we built upon. Thanks for the authors of Qwen for providing the framework.
 
-## Copyright
 
-For commercial purpose usage, please contact Dr. Yuliang Liu: ylliu@hust.edu.cn
+    
+## Copyright
+We welcome suggestions to help us improve the little Monkey. For any query, please contact Dr. Yuliang Liu: ylliu@hust.edu.cn
