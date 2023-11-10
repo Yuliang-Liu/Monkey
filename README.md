@@ -8,7 +8,7 @@
 <br>
 
 <div align="center">
-Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, Yuliang Liu†, Xiang Bai*
+Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, Yuliang Liu†, Xiang Bai†
 </div>
 <div align="center">
 <strong>Huazhong University of Science and Technology, Kingsoft</strong>
