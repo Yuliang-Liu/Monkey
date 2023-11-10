@@ -25,7 +25,7 @@ Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, 
 
 ## performance
 
-![](images/radar.png)
+![](images/performance.png)
 
 ## Demo
 
