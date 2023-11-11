@@ -38,8 +38,15 @@ Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, 
   
 ## Demo
 
-We have a demo open for everyone to play. [Demo](https://53965e0026f6da5097.gradio.live)
+Have a try using the providing [Demo](https://53965e0026f6da5097.gradio.live). All you need are to simpley upload or capture image from desktop or your phone, then click the generate. You will get like:
 
+<br>
+<p align="center">
+    <img src="images/demo_phone.jpg" width="300"/>
+<p>
+<br>
+
+  
 ## Cases
 
 Our model can accurately describe the details in the image.
