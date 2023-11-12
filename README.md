@@ -15,7 +15,8 @@ Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, 
 </div>
 
 <p align="center">
-<a href="updating">Paper</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://221.232.49.195:7680/">Demo</a>&nbsp&nbsp | &nbsp&nbsp<a href="Monkey Model">Monkey Models</a>&nbsp ｜ &nbsp <a href="updating">Tutorial</a>
+<a href="updating">Paper will be released soon</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://221.232.49.195:7680/">Demo</a>&nbsp&nbsp 
+<!--     | &nbsp&nbsp<a href="Monkey Model">Monkey Models</a>&nbsp ｜ &nbsp <a href="updating">Tutorial</a> -->
 </p>
 -----
 
