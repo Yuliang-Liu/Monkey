@@ -39,8 +39,14 @@ Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, 
 
 ## Demo
 
-Have a try using the providing [Demo](http://221.232.49.195:7680/). All you need are to simpley upload or capture image from desktop or your phone, then click the generate. 
+Have a try using the providing [Demo](http://221.232.49.195:7680/). All you need are to simpley upload or capture image from desktop or your phone, then click the generate. You may also generate multiple times to get more information. You can also generate Chinese answer by using “生成中文描述”: 
 
+<br>
+<p align="center">
+    <img src="images/generation.png" width="900"/>
+<p>
+<br>
+    
 ## Cases
 
 Our model can accurately describe the details in the image.
