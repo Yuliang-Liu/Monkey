@@ -90,4 +90,4 @@ We qualitatively compare with existing LMMs including GPT4V, Qwen-vl, etc, which
 
 ​    
 ## Copyright
-We welcome suggestions to help us improve the little Monkey. For any query, please contact Dr. Yuliang Liu: ylliu@hust.edu.cn
+We welcome suggestions to help us improve the little Monkey. For any query, please contact Dr. Yuliang Liu: ylliu@hust.edu.cn. If you find something interesting, please also feel free to share with me through email or open an issue. Thanks! :)
