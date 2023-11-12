@@ -15,7 +15,7 @@ Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, 
 </div>
 
 <p align="center">
-<a href="updating">Paper</a>&nbsp&nbsp | &nbsp&nbsp<a href="https://53965e0026f6da5097.gradio.live">Demo</a>&nbsp&nbsp | &nbsp&nbsp<a href="Monkey Model">Monkey Models</a>&nbsp ｜ &nbsp <a href="updating">Tutorial</a>
+<a href="updating">Paper</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://221.232.49.195:7680/">Demo</a>&nbsp&nbsp | &nbsp&nbsp<a href="Monkey Model">Monkey Models</a>&nbsp ｜ &nbsp <a href="updating">Tutorial</a>
 </p>
 -----
 
@@ -39,14 +39,7 @@ Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, 
 
 ## Demo
 
-Have a try using the providing [Demo](https://53965e0026f6da5097.gradio.live). All you need are to simpley upload or capture image from desktop or your phone, then click the generate. You will get like:
-
-<br>
-<p align="center">
-    <img src="images/demo_phone.jpg" width="300"/>
-<p>
-<br>
-
+Have a try using the providing [Demo](http://221.232.49.195:7680/). All you need are to simpley upload or capture image from desktop or your phone, then click the generate. 
 
 ## Cases
 
