@@ -41,7 +41,7 @@ For those who prefer responses in Chinese, use the '生成中文描述' button t
 
 <br>
 <p align="center">
-    <img src="images/generation.png" width="900"/>
+    <img src="images/generation_chn.png" width="900"/>
 <p>
 <br>
 
