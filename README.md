@@ -91,6 +91,20 @@ We qualitatively compare with existing LMMs including GPT4V, Qwen-vl, etc, which
     <img src="images/compare.png" width="800"/>
 <p>
 <br>
+    
+## Citing Monkey
+If you wish to refer to the baseline results published here, please use the following BibTeX entries:
+
+```BibTeX
+@article{zhang2023Monkey,
+  title={Monkey: Image Resolution and Text Label Are Important Things for Large Multi-modal Models},
+  author={Zhang, Li and Biao, Yang and Qiang, Liu and Zhiyin, Ma and Shuo, Zhang and Jingxu, Yang and Yuliang, Liu and Xiang, Bai},
+  journal={arXiv preprint arXiv:2311.06607},
+  year={2023}
+}
+```
+
+If you find the Monkey cute, please star. It would be a great encouragement for us.
 
 ## Acknowledgement
 
