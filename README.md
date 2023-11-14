@@ -15,7 +15,7 @@ Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, 
 </div>
 
 <p align="center">
-<a href="updating">Paper will be released soon</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://221.232.49.195:7680/">Demo</a>&nbsp&nbsp 
+<a href="updating">Paper will be released soon</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://121.60.58.184:7680/">Demo</a>&nbsp&nbsp 
 <!--     | &nbsp&nbsp<a href="Monkey Model">Monkey Models</a>&nbsp ｜ &nbsp <a href="updating">Tutorial</a> -->
 </p>
 -----
@@ -40,7 +40,7 @@ Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, 
 
 ## Demo
 
-Have a try using the providing [Demo](http://221.232.49.195:7680/). All you need are to simpley upload or capture image from desktop or your phone, then click the generate. You may also generate multiple times to get more information. You can also generate Chinese answer by using “生成中文描述”: 
+Have a try using the providing [Demo](http://121.60.58.184:7680/). All you need are to simpley upload or capture image from desktop or your phone, then click the generate. You may also generate multiple times to get more information. You can also generate Chinese answer by using “生成中文描述”: 
 
 <br>
 <p align="center">
