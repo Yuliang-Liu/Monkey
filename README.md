@@ -30,7 +30,7 @@ Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, 
 
 ## Demo
 
-To use the [demo](http://121.60.58.184:7680/), simply upload an image from your desktop or phone, or capture one directly. Before 11/11/2023, we have observed that many cases Monkey can achieve more accurate results than GPT4V: 
+To use the [demo](http://121.60.58.184:7680/), simply upload an image from your desktop or phone, or capture one directly. Before 14/11/2023, we have observed that for some random pictures Monkey can achieve more accurate results than GPT4V.  
 <br>
 <p align="center">
     <img src="images/demo_gpt4v_compare2.png" width="900"/>
