@@ -47,7 +47,7 @@ For those who prefer responses in Chinese, use the '生成中文描述' button t
 
 
 
-## performance
+## Performance
 
 <br>
 
@@ -96,9 +96,9 @@ We qualitatively compare with existing LMMs including GPT4V, Qwen-vl, etc, which
 If you wish to refer to the baseline results published here, please use the following BibTeX entries:
 
 ```BibTeX
-@article{zhang2023Monkey,
+@article{li2023monkey,
   title={Monkey: Image Resolution and Text Label Are Important Things for Large Multi-modal Models},
-  author={Zhang, Li and Biao, Yang and Qiang, Liu and Zhiyin, Ma and Shuo, Zhang and Jingxu, Yang and Yuliang, Liu and Xiang, Bai},
+  author={Li, Zhang and Yang, Biao and Liu, Qiang and Ma, Zhiyin and Zhang, Shuo and Yang, Jingxu and Sun, Yabo and Liu, Yuliang and Bai, Xiang},
   journal={arXiv preprint arXiv:2311.06607},
   year={2023}
 }
@@ -108,10 +108,8 @@ If you find the Monkey cute, please star. It would be a great encouragement for 
 
 ## Acknowledgement
 
-
 [Qwen-VL](https://github.com/QwenLM/Qwen-VL.git): the codebase we built upon. Thanks for the authors of Qwen for providing the framework.
 
 
-​    
 ## Copyright
-We welcome suggestions to help us improve the Monkey. For any query, please contact Dr. Yuliang Liu: ylliu@hust.edu.cn. If you find something interesting, please also feel free to share with me through email or open an issue. Thanks!
+We welcome suggestions to help us improve the Monkey. For any query, please contact Dr. Yuliang Liu: ylliu@hust.edu.cn. If you find something interesting, please also feel free to share with us through email or open an issue. Thanks!
