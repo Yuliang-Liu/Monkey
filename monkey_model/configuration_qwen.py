@@ -6,7 +6,7 @@
 from transformers import PretrainedConfig
 
 
-class QwenConfig(PretrainedConfig):
+class QWenConfig(PretrainedConfig):
     model_type = "monkey"
     keys_to_ignore_at_inference = ["past_key_values"]
 
