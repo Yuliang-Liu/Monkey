@@ -15,7 +15,7 @@ Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, 
 </div>
 
 <p align="center">
-<a href="https://arxiv.org/abs/2311.06607">Paper</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://121.60.58.184:7680/">Demo</a>&nbsp&nbsp | &nbsp&nbsp<a href="updating">Model&Code update soon</a>&nbsp&nbsp 
+<a href="https://arxiv.org/abs/2311.06607">Paper</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://27.17.252.152:7680/">Demo</a>&nbsp&nbsp | &nbsp&nbsp<a href="updating">Model&Code update soon</a>&nbsp&nbsp 
 <!--     | &nbsp&nbsp<a href="Monkey Model">Monkey Models</a>&nbsp ｜ &nbsp <a href="updating">Tutorial</a> -->
 </p>
 -----
@@ -30,10 +30,10 @@ Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, 
 
 ## Demo
 
-To use the [demo](http://121.60.58.184:7680/), simply upload an image from your desktop or phone, or capture one directly. Before 11/11/2023, we have observed that many cases Monkey can achieve more accurate results than GPT4V: 
+[Demo](http://27.17.252.152:7680/) is fast and easy to use. Simply uploading an image from your desktop or phone, or capture one directly. Before 14/11/2023, we have observed that for some random pictures Monkey can achieve more accurate results than GPT4V.  
 <br>
 <p align="center">
-    <img src="images/demo_gpt4v_compare.png" width="900"/>
+    <img src="images/demo_gpt4v_compare4.png" width="900"/>
 <p>
 <br>
 
@@ -41,13 +41,13 @@ For those who prefer responses in Chinese, use the '生成中文描述' button t
 
 <br>
 <p align="center">
-    <img src="images/generation.png" width="900"/>
+    <img src="images/generation_chn.png" width="900"/>
 <p>
 <br>
 
 
 
-## performance
+## Performance
 
 <br>
 
@@ -91,13 +91,25 @@ We qualitatively compare with existing LMMs including GPT4V, Qwen-vl, etc, which
     <img src="images/compare.png" width="800"/>
 <p>
 <br>
+    
+## Citing Monkey
+If you wish to refer to the baseline results published here, please use the following BibTeX entries:
+
+```BibTeX
+@article{li2023monkey,
+  title={Monkey: Image Resolution and Text Label Are Important Things for Large Multi-modal Models},
+  author={Li, Zhang and Yang, Biao and Liu, Qiang and Ma, Zhiyin and Zhang, Shuo and Yang, Jingxu and Sun, Yabo and Liu, Yuliang and Bai, Xiang},
+  journal={arXiv preprint arXiv:2311.06607},
+  year={2023}
+}
+```
+
+If you find the Monkey cute, please star. It would be a great encouragement for us.
 
 ## Acknowledgement
-
 
 [Qwen-VL](https://github.com/QwenLM/Qwen-VL.git): the codebase we built upon. Thanks for the authors of Qwen for providing the framework.
 
 
-​    
 ## Copyright
-We welcome suggestions to help us improve the little Monkey. For any query, please contact Dr. Yuliang Liu: ylliu@hust.edu.cn. If you find something interesting, please also feel free to share with me through email or open an issue. Thanks! :)
+We welcome suggestions to help us improve the Monkey. For any query, please contact Dr. Yuliang Liu: ylliu@hust.edu.cn. If you find something interesting, please also feel free to share with us through email or open an issue. Thanks!
