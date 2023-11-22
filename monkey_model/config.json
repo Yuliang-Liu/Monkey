@@ -43,7 +43,7 @@
       "output_dim": 4096,
       "patch_size": 14,
       "width": 1664,
-      "lora_repeat_num":0
+      "lora_repeat_num":4
     },
     "vocab_size": 151936
   }
