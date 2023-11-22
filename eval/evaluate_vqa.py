@@ -33,9 +33,9 @@ ds_collections = {
         'metric': 'anls',
         'max_new_tokens': 100,
     },
-    'chartqa_ureader': {
+    'chartqa': {
         'train': 'data/chartqa/train_augmented.jsonl',
-        'test': 'data/chartqa/chartqa_ureader.jsonl',
+        'test': 'data/chartqa/chartqa.jsonl',
         'metric': 'relaxed_accuracy',
         'max_new_tokens': 100,
     },
@@ -55,19 +55,19 @@ ds_collections = {
     },
     'deepform': {
         'train': '',
-        'test': 'data/ureader/test_DeepForm.jsonl',
+        'test': 'data/test_DeepForm.jsonl',
         'metric': 'accuracy',
         'max_new_tokens': 100,
     },
     'KLC': {
         'train': '',
-        'test': 'data/ureader/test_KleisterCharity.jsonl',
+        'test': 'data/test_KleisterCharity.jsonl',
         'metric': 'accuracy',
         'max_new_tokens': 100,
     },
     'WTQ': {
         'train': '',
-        'test': 'data/ureader/test_WikiTableQuestions.jsonl',
+        'test': 'data/test_WikiTableQuestions.jsonl',
         'metric': 'accuracy',   
         'max_new_tokens': 100,
     },
@@ -374,7 +374,7 @@ def evaluate(model,tokenizer,prompt,args,dataset_name):
                     'answer': answer,
                     'annotation': [annotation],
                 })
-            elif dataset_name in ["chartqa_ureader"]:
+            elif dataset_name in ["chartqa"]:
                 outputs.append({
                     'image_path':image_path,
                     'answer': answer,
