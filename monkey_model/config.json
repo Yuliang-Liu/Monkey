@@ -1,0 +1,50 @@
+{
+    "architectures": [
+      "MonkeyLMHeadModel"
+    ],
+    "attn_dropout_prob": 0.0,
+    "auto_map": {
+      "AutoConfig": "configuration_qwen.QWenConfig",
+      "AutoModelForCausalLM": "modeling_monkey.MonkeyLMHeadModel"
+    },
+    "bf16": true,
+    "emb_dropout_prob": 0.0,
+    "fp16": false,
+    "fp32": false,
+    "hidden_size": 4096,
+    "initializer_range": 0.02,
+    "intermediate_size": 22016,
+    "kv_channels": 128,
+    "layer_norm_epsilon": 1e-06,
+    "max_position_embeddings": 8192,
+    "model_type": "monkey",
+    "no_bias": true,
+    "num_attention_heads": 32,
+    "num_hidden_layers": 32,
+    "onnx_safe": null,
+    "rotary_emb_base": 10000,
+    "rotary_pct": 1.0,
+    "scale_attn_weights": true,
+    "seq_length": 2048,
+    "tie_word_embeddings": false,
+    "tokenizer_type": "QWenTokenizer",
+    "torch_dtype": "bfloat16",
+    "transformers_version": "4.32.0",
+    "use_cache": false,
+    "use_dynamic_ntk": true,
+    "use_flash_attn": false,
+    "use_logn_attn": true,
+    "visual": {
+      "heads": 16,
+      "image_size": 896,
+      "image_start_id": 151857,
+      "layers": 48,
+      "mlp_ratio": 4.9231,
+      "output_dim": 4096,
+      "patch_size": 14,
+      "width": 1664,
+      "lora_repeat_num":4
+    },
+    "vocab_size": 151936
+  }
+  
