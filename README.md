@@ -107,9 +107,9 @@ We offer evaluation code for 14 Visual Question Answering (VQA) datasets in the 
 ```
 ds_collections = {
 	'estvqa_test': {
-	'test': 'data/estvqa/estvqa.jsonl',
-	'metric': 'anls',
-	'max_new_tokens': 100,
+		'test': 'data/estvqa/estvqa.jsonl',
+		'metric': 'anls',
+		'max_new_tokens': 100,
 	},
 	...
 }
