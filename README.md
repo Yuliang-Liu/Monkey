@@ -97,7 +97,7 @@ We offer evaluation code for 14 Visual Question Answering (VQA) datasets in the 
 |			├── {image_path1}
 |					  ·
 |					  ·
-|		├── estvqa.jsonl
+|	├── estvqa.jsonl
 ```
  - Example of the format of each line of the annotated `.jsonl` file:
 ```
