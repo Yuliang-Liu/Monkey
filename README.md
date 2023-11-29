@@ -14,7 +14,7 @@ Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, 
 <strong>Huazhong University of Science and Technology, Kingsoft</strong>
 </div>
 <p align="center">
-<a href="https://arxiv.org/abs/2311.06607">Paper</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://27.17.252.152:7681/">Demo</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://huggingface.co/datasets/echo840/Detailed_Caption">Detailed Caption</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://huggingface.co/echo840/Monkey">Model Weight</a>&nbsp&nbsp
+<a href="https://arxiv.org/abs/2311.06607">Paper</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://27.17.252.152:7680/">Demo</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://27.17.252.152:7681/">Demo_chat</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://huggingface.co/datasets/echo840/Detailed_Caption">Detailed Caption</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://huggingface.co/echo840/Monkey">Model Weight</a>&nbsp&nbsp
 <!--     | &nbsp&nbsp<a href="Monkey Model">Monkey Models</a>&nbsp ｜ &nbsp <a href="http://huggingface.co/echo840/Monkey">Tutorial</a> -->
 </p>
 
@@ -43,15 +43,17 @@ pip install -r requirements.txt
 
 ## Demo
 
-[Demo](http://27.17.252.152:7681/) is fast and easy to use. Simply uploading an image from your desktop or phone, or capture one directly. Before 14/11/2023, we have observed that for some random pictures Monkey can achieve more accurate results than GPT4V.  
+[Demo](http://27.17.252.152:7680/) is fast and easy to use. Simply uploading an image from your desktop or phone, or capture one directly. 
+[Demo_chat](http://27.17.252.152:7681/) is also launched as an upgraded version of the original demo to deliver an enhanced interactive experience.
+
+Before 14/11/2023, we have observed that for some random pictures Monkey can achieve more accurate results than GPT4V.  
 <br>
 <p align="center">
     <img src="images/demo_gpt4v_compare4.png" width="900"/>
 <p>
 <br>
 
-We also provide the source code for the demo, allowing you to customize certain parameters for a more unique experience. The specific operations are as follows:
-
+We also provide the source code and the model weight for the original demo, allowing you to customize certain parameters for a more unique experience. The specific operations are as follows:
  1. Make sure you have configured the [environment](#environment).
  2. You can choose to use the demo offline or online:
 - **Offline:** 
@@ -66,6 +68,7 @@ We also provide the source code for the demo, allowing you to customize certain 
 	```
 	python demo.py -c echo840/Monkey 
 	```
+
 In order to generate more detailed captions, we provide some prompt examples so that you can conduct more interesting explorations. You can modify these two variables in the `caption` function to implement different prompt inputs for the caption task, as shown below:
 ```
 query = "Generate the detailed caption in English. Answer:"
@@ -152,19 +155,25 @@ Our model can accurately describe the details in the image.
 <p>
 <br>
 
-Besides, our model has also demonstrated some capabilities in fine-grained question answering.
+Our model performs particularly well in dense text question answering tasks. For example, in the dense text of item labels, Monkey can accurately answer various information about the item, and its performance is very impressive compared to other LMMs including GPT4V.
 
 <br>
 <p align="center">
-    <img src="images/qa_1.png" width="700"/>
+    <img src="images/dense_text_1.png" width="700"/>
 <p>
 <br>
 
-We have also achieved impressive performance on document-based tasks.
+<br>
+<p align="center">
+    <img src="images/dense_text_2.png" width="700"/>
+<p>
+<br>
+
+Monkey also performs equally well in daily life scenes. It can complete various Q&A and caption tasks and describe various details in the image in detail, even the inconspicuous watermark.
 
 <br>
 <p align="center">
-    <img src="images/Doc_Chart.png" width="700"/>
+    <img src="images/qa_caption.png" width="700"/>
 <p>
 <br>
 
