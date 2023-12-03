@@ -14,7 +14,7 @@ Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, 
 <strong>Huazhong University of Science and Technology, Kingsoft</strong>
 </div>
 <p align="center">
-<a href="https://arxiv.org/abs/2311.06607">Paper</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://27.17.252.152:7680/">Demo</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://27.17.252.152:7681/">Demo_chat</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://huggingface.co/datasets/echo840/Detailed_Caption">Detailed Caption</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://huggingface.co/echo840/Monkey">Model Weight</a>&nbsp&nbsp
+<a href="https://arxiv.org/abs/2311.06607">Paper</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://27.17.252.152:7680/">Demo</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://27.17.184.224:7681/">Demo_chat</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://huggingface.co/datasets/echo840/Detailed_Caption">Detailed Caption</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://huggingface.co/echo840/Monkey">Model Weight</a>&nbsp&nbsp
 <!--     | &nbsp&nbsp<a href="Monkey Model">Monkey Models</a>&nbsp ｜ &nbsp <a href="http://huggingface.co/echo840/Monkey">Tutorial</a> -->
 </p>
 
@@ -48,7 +48,7 @@ pip install -r requirements.txt
 ## Demo
 
 [Demo](http://27.17.252.152:7680/) is fast and easy to use. Simply uploading an image from your desktop or phone, or capture one directly. 
-[Demo_chat](http://27.17.252.152:7681/) is also launched as an upgraded version of the original demo to deliver an enhanced interactive experience.
+[Demo_chat](http://27.17.184.224:7681/) is also launched as an upgraded version of the original demo to deliver an enhanced interactive experience.
 
 Before 14/11/2023, we have observed that for some random pictures Monkey can achieve more accurate results than GPT4V.  
 <br>
