@@ -14,7 +14,7 @@ Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, 
 <strong>Huazhong University of Science and Technology, Kingsoft</strong>
 </div>
 <p align="center">
-<a href="https://arxiv.org/abs/2311.06607">Paper</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://27.18.241.29:7680/">Demo</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://27.18.241.29:7681/">Demo_chat</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://huggingface.co/datasets/echo840/Detailed_Caption">Detailed Caption</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://huggingface.co/echo840/Monkey">Model Weight</a>&nbsp&nbsp <a href="https://www.wisemodel.cn/models/HUST-VLRLab/Monkey/">Model Weight in wisemodel</a>&nbsp&nbsp
+<a href="https://arxiv.org/abs/2311.06607">Paper</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://27.18.241.29:7680/">Demo</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://27.18.241.29:7681/">Demo_chat</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://huggingface.co/datasets/echo840/Detailed_Caption">Detailed Caption</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://huggingface.co/echo840/Monkey">Model Weight</a>&nbsp&nbsp  |  <a href="https://www.wisemodel.cn/models/HUST-VLRLab/Monkey/">Model Weight in wisemodel</a>&nbsp&nbsp
 <!--     | &nbsp&nbsp<a href="Monkey Model">Monkey Models</a>&nbsp ｜ &nbsp <a href="http://huggingface.co/echo840/Monkey">Tutorial</a> -->
 </p>
 
@@ -23,7 +23,7 @@ Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, 
 **Monkey** brings a training-efficient approach to effectively improve the input resolution capacity up to 896 x 1344 pixels without pretraining from the start. To bridge the gap between simple text labels and high input resolution, we propose a multi-level description generation method, which automatically provides rich information that can guide the model to learn the contextual association between scenes and objects. With the synergy of these two designs, our model achieved excellent results on multiple benchmarks. By comparing our model with various LMMs, including GPT4V, our model demonstrates promising performance in image captioning by paying attention to textual information and capturing fine details within the images; its improved input resolution also enables remarkable performance in document images with dense text. 
     
 ## News 
-* ```2023.11.25``` 🚀🚀🚀 Monkey-chat demo is released, which demonstrates improved results on most datasets. Paper is in preparation. 
+* ```2023.11.25``` 🚀🚀🚀 Monkey-chat demo is released. 
 * ```2023.11.06``` 🚀🚀🚀 Monkey [paper](https://arxiv.org/abs/2311.06607) is released.
 
 
