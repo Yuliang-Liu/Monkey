@@ -1,5 +1,9 @@
-# Monkey: Image Resolution and Text Label Are Important Things for Large Multi-modal Models
+<p align="left">
+        中文</a>&nbsp ｜ &nbsp<a href="README_cn.md">English</a>&nbsp
+</p>
+<br><br>
 
+# Monkey: Image Resolution and Text Label Are Important Things for Large Multi-modal Models
 
 <br>
 <p align="center">
