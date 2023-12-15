@@ -18,7 +18,7 @@ Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, 
 <strong>华中科技大学，金山</strong>
 </div>
 <p align="center">
-<a href="https://arxiv.org/abs/2311.06607">论文</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://27.18.241.29:7680/">演示</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://27.18.241.29:7681/">对话演示</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://huggingface.co/datasets/echo840/Detailed_Caption">详细描述</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://huggingface.co/echo840/Monkey">模型权重</a>&nbsp&nbsp  |  <a href="https://www.wisemodel.cn/models/HUST-VLRLab/Monkey/">始智AI</a>&nbsp&nbsp
+<a href="https://arxiv.org/abs/2311.06607">论文</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://27.18.4.31:7680/">演示</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://27.18.4.31:7681/">对话演示</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://huggingface.co/datasets/echo840/Detailed_Caption">详细描述</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://huggingface.co/echo840/Monkey">模型权重</a>&nbsp&nbsp  |  <a href="https://www.wisemodel.cn/models/HUST-VLRLab/Monkey/">始智AI</a>&nbsp&nbsp
 <!--     | &nbsp&nbsp<a href="Monkey Model">Monkey Models</a>&nbsp ｜ &nbsp <a href="http://huggingface.co/echo840/Monkey">Tutorial</a> -->
 </p>
 
@@ -27,7 +27,7 @@ Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, 
 **Monkey** 引入了一种高效的训练方法，可以有效地将输入分辨率提高到 896 x 1344 ，同时不需要从开始进行预训练。为了弥合简单的文本描述和高输入分辨率之间的差距，Monkey 还提出了一种多级描述生成方法，该方法自动提供丰富的信息，可以指导模型学习场景和对象之间的关联。通过这两种设计的协同作用，Monkey 在多个基准测试中取得了优异的结果。与各种多模态大模型（包括  GPT4V）相比，Monkey 通过关注文本信息并捕获图像中的精细细节，在图像字幕方面表现出了良好的性能；高输入分辨率还可以使模型在具有密集文本的文档图像中展现出出色的性能。
     
 ## 新闻 
-* ```2023.11.25``` 🚀🚀🚀 Monkey [对话演示](http://27.18.241.29:7681/)发布。 
+* ```2023.11.25``` 🚀🚀🚀 Monkey [对话演示](http://27.18.4.31:7681/)发布。 
 * ```2023.11.06``` 🚀🚀🚀 Monkey [论文](https://arxiv.org/abs/2311.06607)发布。
 
 
@@ -51,9 +51,9 @@ pip install -r requirements.txt
 
 ## 演示
 
-[演示](http://27.18.241.29:7680/) 快速且易于使用。只需从桌面或手机上传图像，或直接拍照即可。 
+[演示](http://27.18.4.31:7680/) 快速且易于使用。只需从桌面或手机上传图像，或直接拍照即可。 
 
-为了提供更好的交互体验，我们还推出了原始演示的升级版本[对话演示](http://27.18.241.29:7681/)。
+为了提供更好的交互体验，我们还推出了原始演示的升级版本[对话演示](http://27.18.4.31:7681/)。
 
 我们观察到对于一些随机图片Monkey可以取得比GPT4V更准确的结果。
 <br>
