@@ -144,7 +144,7 @@ bash eval/eval.sh 'EVAL_PTH' 'SAVE_NAME'
 
 **注意：** 需要指定训练数据的路径，该路径应该是包含对话列表的 json 文件。
 
-受 Qwen-VL 的启发，我们冻结了大型语言模型（LLM），并将 LoRA 引入四个线性层``"c_attn"、"attn.c_proj"、"w1"、"w2"```进行训练。 这使得使用 8 个 NVIDIA 3090 GPU 训练 Monkey 成为可能。 具体实现代码在``model_qwen_new.py```中。 使用时只需将``model_qwen.py```的内容替换为````model_qwen_new.py```的内容即可。
+受 Qwen-VL 的启发，我们冻结了大型语言模型（LLM），并将 LoRA 引入四个线性层```"c_attn"、"attn.c_proj"、"w1"、"w2"```进行训练。 这使得使用 8 个 NVIDIA 3090 GPU 训练 Monkey 成为可能。 具体实现代码在```model_qwen_new.py```中。 使用时只需将```model_qwen.py```的内容替换为```model_qwen_new.py```的内容即可。
 
 ## 性能
 
