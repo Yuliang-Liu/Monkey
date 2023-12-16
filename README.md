@@ -143,6 +143,8 @@ We also offer Monkey's model definition and training code, which you can explore
 
 **ATTENTION:** Specify the path to your training data, which should be a json file consisting of a list of conversations.
 
+Inspired by Qwen-VL, we froze the Large Language Model (LLM) and introduced LoRA into four linear layers ```"c_attn", "attn.c_proj", "w1", "w2"``` for training. This step makes it possible to train Monkey using 8 NVIDIA 3090 GPUs. The specific implementation code is in ```model_qwen_new.py```. When using it, just replace the contents of ```model_qwen.py``` with the contents of ```model_qwen_new.py```.
+
 
 ## Performance
 
