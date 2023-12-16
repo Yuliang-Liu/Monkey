@@ -7,7 +7,7 @@
 
 <br>
 <p align="center">
-    <img src="images/logo_monkey.png" width="300"/>
+    <img src="images/Logo-Monkey2.gif" width="300"/>
 <p>
 <br>
 
