@@ -27,6 +27,7 @@ Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, 
 **Monkey** brings a training-efficient approach to effectively improve the input resolution capacity up to 896 x 1344 pixels without pretraining from the start. To bridge the gap between simple text labels and high input resolution, we propose a multi-level description generation method, which automatically provides rich information that can guide the model to learn the contextual association between scenes and objects. With the synergy of these two designs, our model achieved excellent results on multiple benchmarks. By comparing our model with various LMMs, including GPT4V, our model demonstrates promising performance in image captioning by paying attention to textual information and capturing fine details within the images; its improved input resolution also enables remarkable performance in document images with dense text. 
     
 ## News 
+* ```2023.12.21``` 🚀🚀🚀 The JSON file used for Monkey training is provided.
 * ```2023.12.16``` 🚀🚀🚀 Monkey can be trained using 8 NVIDIA 3090 GPUs. See subsection [train](#Train) for details.
 * ```2023.11.25``` 🚀🚀🚀 Monkey-chat demo is released. 
 * ```2023.11.06``` 🚀🚀🚀 Monkey [paper](https://arxiv.org/abs/2311.06607) is released.
@@ -92,6 +93,8 @@ chat_query = "Generate the detailed caption in English. Answer:"
 
 ## Dataset
 
+The json file used for Monkey training can be downloaded at [Link](https://drive.google.com/file/d/18z_uQTe8Jq61V5rgHtxOt85uKBodbvw1/view?usp=sharing).
+
 The data from our multi-level description generation method is now open-sourced and available for download at [Link](https://huggingface.co/datasets/echo840/Detailed_Caption). Examples:
 
 <br>
@@ -145,6 +148,8 @@ bash eval/eval.sh 'EVAL_PTH' 'SAVE_NAME'
 ## Train
 
 We also offer Monkey's model definition and training code, which you can explore above. You can execute the training code through executing `finetune_ds_debug.sh`.
+
+The json file used for Monkey training can be downloaded at [Link](https://drive.google.com/file/d/18z_uQTe8Jq61V5rgHtxOt85uKBodbvw1/view?usp=sharing).
 
 **ATTENTION:** Specify the path to your training data, which should be a json file consisting of a list of conversations.
 
