@@ -164,7 +164,7 @@ Inspired by Qwen-VL, we freeze the Large Language Model (LLM) and introduce LoRA
 <br>
 
 <p align="center">
-    <img src="images/radar.png" width="800"/>
+    <img src="images/radar_1.png" width="800"/>
 <p>
 <br>
 
