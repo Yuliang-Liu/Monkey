@@ -159,7 +159,7 @@ Monkey训练使用的json文件可以在[链接](https://drive.google.com/file/d
 <br>
 
 <p align="center">
-    <img src="images/radar.png" width="800"/>
+    <img src="images/radar_1.png" width="800"/>
 <p>
 <br>
 
