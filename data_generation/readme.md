@@ -26,11 +26,11 @@ Generation Steps:
 6. Compute the similarity score.
 ```python image_text_matching.py --ann_path ./outputs/grit.json --output_path ./outputs/grit_score.json```
 
-7. Call ppocr to detect text in an image.   
+7. Use ppocr to detect text in an image.   
 ```python ocr_ppocr.py```
 
 8. Integrate the generated annotations into ann_all.json.  
 ```python add_all_json.py```  
 
-9. Call the ChatGPTAPI to generate the final detailed description and save it in ./outputs/ann_all.json.   
+9. Use ChatGPT API to generate the final detailed description and save it in ./outputs/ann_all.json.   
 ```python chatgpt.py```       
