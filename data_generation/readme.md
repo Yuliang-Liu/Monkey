@@ -26,7 +26,7 @@ Generation Steps:
 6. Compute the similarity score.
 ```python image_text_matching.py --ann_path ./outputs/grit.json --output_path ./outputs/grit_score.json```
 
-7. Use ppocr to detect text in an image.   
+7. Use ppocr to detect text in images.   
 ```python ocr_ppocr.py```
 
 8. Integrate the generated annotations into ann_all.json.  
