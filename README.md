@@ -82,8 +82,8 @@ We also provide the source code and the model weight for the original demo, allo
 
 In order to generate more detailed captions, we provide some prompt examples so that you can conduct more interesting explorations. You can modify these two variables in the `caption` function to implement different prompt inputs for the caption task, as shown below:
 ```
-query = "Generate the detailed caption in English. Answer:"
-chat_query = "Generate the detailed caption in English. Answer:"
+query = "Generate the detailed caption in English. Answer: "
+chat_query = "Generate the detailed caption in English. Answer: "
 ```
 - Generate the detailed caption in English.
 - Explain the visual content of the image in great detail.
@@ -159,6 +159,42 @@ Inspired by Qwen-VL, we freeze the Large Language Model (LLM) and introduce LoRA
  - Add LoRA: You need to replace the contents of ```model_qwen.py``` with the contents of ```model_qwen_nvdia3090.py```.
  - Freeze LLM: You need to freeze other modules except LoRA and Resampler modules in ```finetune_multitask.py```.
 
+
+## Inference
+
+```python
+from transformers import AutoModelForCausalLM, AutoTokenizer
+checkpoint = "echo840/Monkey"
+model = AutoModelForCausalLM.from_pretrained(checkpoint, device_map='cuda', trust_remote_code=True).eval()
+tokenizer = AutoTokenizer.from_pretrained(checkpoint, trust_remote_code=True)
+tokenizer.padding_side = 'left'
+tokenizer.pad_token_id = tokenizer.eod_id
+img_path = ""
+question = ""
+query = f'<img>{img_path}</img> {question} Answer: ' #VQA
+# query = f'<img>{img_path}</img> Generate the detailed caption in English: ' #detailed caption
+
+input_ids = tokenizer(query, return_tensors='pt', padding='longest')
+attention_mask = input_ids.attention_mask
+input_ids = input_ids.input_ids
+
+pred = model.generate(
+            input_ids=input_ids.cuda(),
+            attention_mask=attention_mask.cuda(),
+            do_sample=False,
+            num_beams=1,
+            max_new_tokens=10,
+            min_new_tokens=1,
+            length_penalty=1,
+            num_return_sequences=1,
+            output_hidden_states=True,
+            use_cache=True,
+            pad_token_id=tokenizer.eod_id,
+            eos_token_id=tokenizer.eod_id,
+            )
+response = tokenizer.decode(pred[0][input_ids.size(1):].cpu(), skip_special_tokens=True).strip()
+print(response)
+```
 
 ## Performance
 
