@@ -12,7 +12,7 @@ Generation Steps:
 ```python blip2.py```
 
 2. Use the Grit model to generate dense captions for each image.
-```python grit.py```
+```python grit_generate.py```
 
 3. Generate segmentation maps for each image using the SAM model, and save the segmentation maps in the "./masks" directory.
 ```python amg.py --checkpoint ./model_weight/<pth name>  --model-type <model_type>  --input ./images  --output ./data_gen/masks --convert-to-rle```
