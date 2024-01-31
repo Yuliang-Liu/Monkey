@@ -18,7 +18,7 @@ Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, 
 <strong>华中科技大学，金山</strong>
 </div>
 <p align="center">
-<a href="https://arxiv.org/abs/2311.06607">论文</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://27.17.77.149:7681/">对话演示</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://huggingface.co/datasets/echo840/Detailed_Caption">详细描述</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://huggingface.co/echo840/Monkey">模型权重</a>&nbsp&nbsp  |  <a href="https://www.wisemodel.cn/models/HUST-VLRLab/Monkey/">始智AI</a>&nbsp&nbsp
+<a href="https://arxiv.org/abs/2311.06607">论文</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://27.17.184.204:7681/">对话演示</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://huggingface.co/datasets/echo840/Detailed_Caption">详细描述</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://huggingface.co/echo840/Monkey">模型权重</a>&nbsp&nbsp  |  <a href="https://www.wisemodel.cn/models/HUST-VLRLab/Monkey/">始智AI</a>&nbsp&nbsp
 <!--     | &nbsp&nbsp<a href="Monkey Model">Monkey Models</a>&nbsp ｜ &nbsp <a href="http://huggingface.co/echo840/Monkey">Tutorial</a> -->
 </p>
 
@@ -29,7 +29,7 @@ Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, 
 ## 新闻 
 * ```2023.12.21``` 🚀🚀🚀 Monkey 训练使用的 JSON 文件发布。
 * ```2023.12.16``` 🚀🚀🚀 Monkey 可以使用 8 NVIDIA 3090 GPUs 进行训练。详见[训练](#训练)。
-* ```2023.11.25``` 🚀🚀🚀 Monkey [对话演示](http://27.17.77.149:7681/)发布。 
+* ```2023.11.25``` 🚀🚀🚀 Monkey [对话演示](http://27.17.184.204:7681/)发布。 
 * ```2023.11.06``` 🚀🚀🚀 Monkey [论文](https://arxiv.org/abs/2311.06607)发布。
 
 
@@ -55,7 +55,7 @@ pip install -r requirements.txt
 
 演示快速且易于使用。只需从桌面或手机上传图像，或直接拍照即可。 
 
-为了提供更好的交互体验，我们还推出了原始演示的升级版本[对话演示](http://27.17.77.149:7681/)。
+为了提供更好的交互体验，我们还推出了原始演示的升级版本[对话演示](http://27.17.184.204:7681/)。
 
 我们观察到对于一些随机图片Monkey可以取得比GPT4V更准确的结果。
 <br>
