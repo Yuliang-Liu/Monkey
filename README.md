@@ -55,7 +55,7 @@ pip install -r requirements.txt
 ## Demo
 
 Demo is fast and easy to use. Simply uploading an image from your desktop or phone, or capture one directly. 
-[Demo_chat](http://27.17.184.204:7681/) is also launched as an upgraded version of the original demo to deliver an enhanced interactive experience.
+[Demo_chat](http://vlrlab-monkey.xyz:7681/) is also launched as an upgraded version of the original demo to deliver an enhanced interactive experience.
 
 Before 14/11/2023, we have observed that for some random pictures Monkey can achieve more accurate results than GPT4V.  
 <br>
