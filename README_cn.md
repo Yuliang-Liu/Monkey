@@ -80,17 +80,6 @@ pip install -r requirements.txt
 	python demo.py -c echo840/Monkey 
 	```
 
-为了生成更详细的字幕，我们提供了一些 prompt 示例，以便您进行更有趣的探索。您可以在`caption`函数中修改这两个变量来实现字幕任务的不同提示输入，如下所示：
-```
-query = "Generate the detailed caption in English. Answer:"
-chat_query = "Generate the detailed caption in English. Answer:"
-```
-- Generate the detailed caption in English.
-- Explain the visual content of the image in great detail.
-- Analyze the image in a comprehensive and detailed manner.
-- Describe the image in as much detail as possible in English without duplicating it.
-- Describe the image in as much detail as possible in English, including as many elements from the image as possible, but without repetition.
-
 
 ## 数据集
 
