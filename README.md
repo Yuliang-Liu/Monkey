@@ -80,18 +80,6 @@ We also provide the source code and the model weight for the original demo, allo
 	python demo.py -c echo840/Monkey 
 	```
 
-In order to generate more detailed captions, we provide some prompt examples so that you can conduct more interesting explorations. You can modify these two variables in the `caption` function to implement different prompt inputs for the caption task, as shown below:
-```
-query = "Generate the detailed caption in English. Answer: "
-chat_query = "Generate the detailed caption in English. Answer: "
-```
-- Generate the detailed caption in English.
-- Explain the visual content of the image in great detail.
-- Analyze the image in a comprehensive and detailed manner.
-- Describe the image in as much detail as possible in English without duplicating it.
-- Describe the image in as much detail as possible in English, including as many elements from the image as possible, but without repetition.
-
-
 ## Dataset
 
 The json file used for Monkey training can be downloaded at [Link](https://drive.google.com/file/d/18z_uQTe8Jq61V5rgHtxOt85uKBodbvw1/view?usp=sharing).
