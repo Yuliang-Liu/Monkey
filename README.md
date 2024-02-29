@@ -65,6 +65,13 @@ Before 14/11/2023, we have observed that for some random pictures Monkey can ach
 <p>
 <br>
 
+Before 31/1/2024, Monkey-chat achieved the fifth rank in the Multimodal Model category on [OpenCompass](https://opencompass.org.cn/home). 
+<br>
+<p align="center">
+    <img src="images/Monkey-rank.png" width="900"/>
+<p>
+<br>
+	
 We also provide the source code and the model weight for the original demo, allowing you to customize certain parameters for a more unique experience. The specific operations are as follows:
  1. Make sure you have configured the [environment](#environment).
  2. You can choose to use the demo offline or online:
