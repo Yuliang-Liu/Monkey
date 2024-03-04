@@ -105,7 +105,7 @@ The data from our multi-level description generation method is now open-sourced 
 We offer evaluation code for 14 Visual Question Answering (VQA) datasets in the `evaluate_vqa.py` file, facilitating a quick verification of results.  The specific operations are as follows:
 
  1. Make sure you have configured the [environment](#environment).
- 2. Modify `sys.path.append("pathto/Monkey")`  to your model weight path.
+ 2. Modify `sys.path.append("pathto/Monkey")`  to the project path.
  3. Prepare the datasets required for evaluation. 
  4. Run the evaluation code.
 
