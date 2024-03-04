@@ -93,7 +93,7 @@ Monkey训练使用的json文件可以在[链接](https://drive.google.com/file/d
 我们在`evaluate_vqa.py`文件中提供了 14 个视觉问答（VQA）数据集的评估代码，以便于快速验证结果。具体操作如下：
 
  1. 确保您配置好了[环境](#环境).
- 2. 修改`sys.path.append("pathto/Monkey")`为模型权重的路径。
+ 2. 修改`sys.path.append("pathto/Monkey")`为该项目的地址。
  3. 准备需要评估的数据集。
  4. 运行评估代码。
 
