@@ -140,7 +140,7 @@ Monkey训练使用的json文件可以在[链接](https://drive.google.com/file/d
 
 受 Qwen-VL 的启发，我们冻结了大型语言模型（LLM），并将 LoRA 引入四个线性层```"c_attn"、"attn.c_proj"、"w1"、"w2"```进行训练。 这使得使用 8 个 NVIDIA 3090 GPU 训练 Monkey 成为可能。
 
- - 添加LoRA：需要将```model_qwen.py```的内容替换为```model_qwen_nvdia3090.py```的内容
+ - 添加LoRA：需要将```modeling_qwen.py```的内容替换为```modeling_qwen_nvdia3090.py```的内容
  - 冻结LLM：需要在```finetune_multitask.py```中冻结除LoRA和Resampler模块的其他模块
 
 ## 推理
