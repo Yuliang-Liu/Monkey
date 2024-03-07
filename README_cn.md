@@ -18,7 +18,7 @@ Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, 
 <strong>华中科技大学，金山</strong>
 </div>
 <p align="center">
-<a href="https://arxiv.org/abs/2311.06607">论文</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://27.18.93.119:7681/">对话演示</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://huggingface.co/datasets/echo840/Detailed_Caption">详细描述</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://huggingface.co/echo840/Monkey">模型权重</a>&nbsp&nbsp  |  <a href="https://www.wisemodel.cn/models/HUST-VLRLab/Monkey/">始智AI</a>&nbsp&nbsp
+<a href="https://arxiv.org/abs/2311.06607">论文</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://vlrlab-monkey.xyz:7681/">对话演示</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://huggingface.co/datasets/echo840/Detailed_Caption">详细描述</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://huggingface.co/echo840/Monkey">模型权重</a>&nbsp&nbsp  |  <a href="https://www.wisemodel.cn/models/HUST-VLRLab/Monkey/">始智AI</a>&nbsp&nbsp
 <!--     | &nbsp&nbsp<a href="Monkey Model">Monkey Models</a>&nbsp ｜ &nbsp <a href="http://huggingface.co/echo840/Monkey">Tutorial</a> -->
 </p>
 
@@ -29,7 +29,7 @@ Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, 
 ## 新闻 
 * ```2023.12.21``` 🚀🚀🚀 Monkey 训练使用的 JSON 文件发布。
 * ```2023.12.16``` 🚀🚀🚀 Monkey 可以使用 8 NVIDIA 3090 GPUs 进行训练。详见[训练](#训练)。
-* ```2023.11.25``` 🚀🚀🚀 Monkey [对话演示](http://27.18.93.119:7681/)发布。 
+* ```2023.11.25``` 🚀🚀🚀 Monkey [对话演示](http://vlrlab-monkey.xyz:7681/)发布。 
 * ```2023.11.06``` 🚀🚀🚀 Monkey [论文](https://arxiv.org/abs/2311.06607)发布。
 
 
