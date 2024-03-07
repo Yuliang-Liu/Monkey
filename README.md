@@ -152,7 +152,7 @@ The json file used for Monkey training can be downloaded at [Link](https://drive
 
 Inspired by Qwen-VL, we freeze the Large Language Model (LLM) and introduce LoRA into four linear layers ```"c_attn", "attn.c_proj", "w1", "w2"``` for training. This step makes it possible to train Monkey using 8 NVIDIA 3090 GPUs. The specific implementation code is in ```model_qwen_nvdia3090.py```.
 
- - Add LoRA: You need to replace the contents of ```model_qwen.py``` with the contents of ```model_qwen_nvdia3090.py```.
+ - Add LoRA: You need to replace the contents of ```modeling_qwen.py``` with the contents of ```modeling_qwen_nvdia3090.py```.
  - Freeze LLM: You need to freeze other modules except LoRA and Resampler modules in ```finetune_multitask.py```.
 
 
