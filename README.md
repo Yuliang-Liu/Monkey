@@ -37,10 +37,9 @@ Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, 
 
 
 ## Spotlights
-
-- **Contextual associations.** Our method demonstrates a superior ability to infer the relationships between targets more effectively when answering questions, which results in delivering more comprehensive and insightful results.
+- **Contextual associations.** We introduce a multilevel description generation method that improves the model’s ability to grasp the relationships among multiple targets and more effectively utilize common knowledge in generating text descriptions.
 - **Support resolution up to 1344 x 896.** Surpassing the standard 448 x 448 resolution typically employed for LMMs, this significant increase in resolution augments the ability to discern and understand unnoticeable or tightly clustered objects and dense text. 
-- **Enhanced general performance.** We carried out testing across 16 diverse datasets, leading to impressive performance by our Monkey model in tasks such as Image Captioning, General Visual Question Answering, Text-centric Visual Question Answering, and Document-oriented Visual Question Answering.
+- **Enhanced general performance.** We carried out testing across 18 diverse datasets, leading to a very competitive performance by our Monkey model in tasks such as Image Captioning, General Visual Question Answering, Scene Text-centric Visual Question Answering, and Document-oriented Visual Question Answering. In particular, during qualitative evaluations centered on dense text question answering, Monkey has shown promising results, comparing with GPT4V
 
 
 ## Environment
