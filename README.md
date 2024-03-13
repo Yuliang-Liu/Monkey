@@ -27,7 +27,7 @@ Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, 
 **Monkey** brings a training-efficient approach to effectively improve the input resolution capacity up to 896 x 1344 pixels without pretraining from the start. To bridge the gap between simple text labels and high input resolution, we propose a multi-level description generation method, which automatically provides rich information that can guide the model to learn the contextual association between scenes and objects. With the synergy of these two designs, our model achieved excellent results on multiple benchmarks. By comparing our model with various LMMs, including GPT4V, our model demonstrates promising performance in image captioning by paying attention to textual information and capturing fine details within the images; its improved input resolution also enables remarkable performance in document images with dense text. 
     
 ## News 
-* ```2024.3.8  ``` 🚀 We release [TextMonkey](https://arxiv.org/abs/2403.04473) for document understanding. ([Demo](http://vlrlab-monkey.xyz:7684/)).
+* ```2024.3.8  ``` 🚀 We introduce [TextMonkey](https://arxiv.org/abs/2403.04473), using only public document data, with a ([Demo](http://vlrlab-monkey.xyz:7684/)) available and code forthcoming.
 * ```2024.2.27 ``` 🚀 Monkey is accepted by CVPR 2024. The [paper](https://arxiv.org/abs/2311.06607) has been carefully updated according to the valuable comments.
 * ```2024.1.3  ``` 🚀 Release the basic data generation pipeline. [Data Generation](./data_generation)
 * ```2023.12.21``` 🚀 The JSON file used for Monkey training is provided.
