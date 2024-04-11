@@ -12,7 +12,7 @@ from tqdm import tqdm
 
 from vqa import VQA
 from vqa_eval import VQAEval
-sys.path.append("/home/kas/code/Monkey-main/")
+sys.path.append("pathto/Monkey/")
 from monkey_model.modeling_textmonkey import TextMonkeyLMHeadModel
 
 from monkey_model.tokenization_qwen import QWenTokenizer

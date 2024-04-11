@@ -21,9 +21,8 @@ Zhang Li*, Biao Yang*, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, 
 <a href="https://arxiv.org/abs/2311.06607">论文</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://vlrlab-monkey.xyz:7681/">对话演示</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://huggingface.co/datasets/echo840/Detailed_Caption">详细描述</a>&nbsp&nbsp | &nbsp&nbsp<a href="http://huggingface.co/echo840/Monkey">模型权重</a>&nbsp&nbsp  |  <a href="https://www.wisemodel.cn/models/HUST-VLRLab/Monkey/">始智AI</a>&nbsp&nbsp
 <!--     | &nbsp&nbsp<a href="Monkey Model">Monkey Models</a>&nbsp ｜ &nbsp <a href="http://huggingface.co/echo840/Monkey">Tutorial</a> -->
 </p>
-
 -----
-  
+
 **Monkey** 引入了一种高效的训练方法，可以有效地将输入分辨率提高到 896 x 1344 ，同时不需要从开始进行预训练。为了弥合简单的文本描述和高输入分辨率之间的差距，Monkey 还提出了一种多级描述生成方法，该方法自动提供丰富的信息，可以指导模型学习场景和对象之间的关联。通过这两种设计的协同作用，Monkey 在多个基准测试中取得了优异的结果。与各种多模态大模型（包括  GPT4V）相比，Monkey 通过关注文本信息并捕获图像中的精细细节，在图像字幕方面表现出了良好的性能；高输入分辨率还可以使模型在具有密集文本的文档图像中展现出出色的性能。
     
 ## 新闻 
