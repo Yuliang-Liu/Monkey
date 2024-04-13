@@ -436,7 +436,10 @@ class VisionTransformer(nn.Module):
             **kwargs
     ):
         super().__init__()
-        image_height, image_width = self.image_size = (image_size, image_size)
+        if isinstance(image_size, tuple) or isinstance(image_size, list):
+            image_height, image_width = self.image_size = image_size
+        else:
+            image_height, image_width = self.image_size = (image_size,image_size)
         patch_height, patch_width = self.patch_size = (patch_size, patch_size)
         self.grid_size = (image_height // patch_height, image_width // patch_width)
         self.output_dim = output_dim

@@ -45,7 +45,7 @@ from .qwen_generation_utils import (
     StopWordsLogitsProcessor,
 )
 from .visual import VisionTransformer
-
+SUPPORT_TORCH2 = hasattr(torch, '__version__') and int(torch.__version__.split(".")[0]) >= 2
 
 logger = logging.get_logger(__name__)
 
@@ -69,6 +69,142 @@ Pass argument `stream` to model.chat() is buggy, deprecated, and marked for remo
 
 apply_rotary_emb_func = None
 rms_norm = None
+
+
+# use flash attnetion, if your machine do not support it, you can close it
+use_flash_attention = True
+
+
+
+def _import_flash_attn():
+    global apply_rotary_emb_func, rms_norm, flash_attn_unpadded_func
+    try:
+        from flash_attn.layers.rotary import apply_rotary_emb_func as __apply_rotary_emb_func
+        apply_rotary_emb_func = __apply_rotary_emb_func
+    except ImportError:
+        logger.warn(
+            "Warning: import flash_attn rotary fail, please install FlashAttention rotary to get higher efficiency "
+            "https://github.com/Dao-AILab/flash-attention/tree/main/csrc/rotary"
+        )
+
+    # try:
+    #     from flash_attn.ops.rms_norm import rms_norm as __rms_norm
+    #     rms_norm = __rms_norm
+    # except ImportError:
+    #     logger.warn(
+    #         "Warning: import flash_attn rms_norm fail, please install FlashAttention layer_norm to get higher efficiency "
+    #         "https://github.com/Dao-AILab/flash-attention/tree/main/csrc/layer_norm"
+    #     )
+
+    try:
+        import flash_attn
+        if not hasattr(flash_attn, '__version__'):
+            from flash_attn.flash_attn_interface import flash_attn_unpadded_func as __flash_attn_unpadded_func
+        else:
+            if int(flash_attn.__version__.split(".")[0]) >= 2:
+                from flash_attn.flash_attn_interface import flash_attn_varlen_func as __flash_attn_unpadded_func
+            else:
+                from flash_attn.flash_attn_interface import flash_attn_unpadded_func as __flash_attn_unpadded_func
+        flash_attn_unpadded_func = __flash_attn_unpadded_func
+    except ImportError:
+        logger.warn(
+            "Warning: import flash_attn fail, please install FlashAttention to get higher efficiency "
+            "https://github.com/Dao-AILab/flash-attention"
+        )
+
+class FlashSelfAttention(torch.nn.Module):
+    def __init__(
+        self,
+        causal=False,
+        softmax_scale=None,
+        attention_dropout=0.0,
+    ):
+        super().__init__()
+        assert flash_attn_unpadded_func is not None, (
+            "Please install FlashAttention first, " "e.g., with pip install flash-attn"
+        )
+        assert (
+            rearrange is not None
+        ), "Please install einops first, e.g., with pip install einops"
+        self.causal = causal
+        self.softmax_scale = softmax_scale
+        self.dropout_p = attention_dropout
+
+    def unpad_input(self, hidden_states, attention_mask):
+        valid_mask = attention_mask.squeeze(1).squeeze(1).eq(0)
+        seqlens_in_batch = valid_mask.sum(dim=-1, dtype=torch.int32)
+        indices = torch.nonzero(valid_mask.flatten(), as_tuple=False).flatten()
+        max_seqlen_in_batch = seqlens_in_batch.max().item()
+        cu_seqlens = F.pad(torch.cumsum(seqlens_in_batch, dim=0, dtype=torch.torch.int32), (1, 0))
+        hidden_states = hidden_states[indices]
+        return hidden_states, indices, cu_seqlens, max_seqlen_in_batch
+
+    def pad_input(self, hidden_states, indices, batch, seqlen):
+        output = torch.zeros(batch * seqlen, *hidden_states.shape[1:], device=hidden_states.device,
+                             dtype=hidden_states.dtype)
+        output[indices] = hidden_states
+        return rearrange(output, '(b s) ... -> b s ...', b=batch)
+
+    def forward(self, q, k, v, attention_mask=None):
+        assert all((i.dtype in [torch.float16, torch.bfloat16] for i in (q, k, v)))
+        assert all((i.is_cuda for i in (q, k, v)))
+        batch_size, seqlen_q = q.shape[0], q.shape[1]
+        seqlen_k = k.shape[1]
+        seqlen_out = seqlen_q
+
+        q, k, v = [rearrange(x, "b s ... -> (b s) ...") for x in [q, k, v]]
+        cu_seqlens_q = torch.arange(
+            0,
+            (batch_size + 1) * seqlen_q,
+            step=seqlen_q,
+            dtype=torch.int32,
+            device=q.device,
+        )
+        
+
+        if batch_size > 1 and attention_mask is not None:
+            k, indices_k, cu_seqlens_k, seqlen_k = self.unpad_input(k, attention_mask)
+            if q.size(0) == v.size(0):
+                q = q[indices_k]
+                cu_seqlens_q = cu_seqlens_k
+                seqlen_q = seqlen_k
+            v = v[indices_k]
+        else:
+            cu_seqlens_k = torch.arange(
+                0,
+                (batch_size + 1) * seqlen_k,
+                step=seqlen_k,
+                dtype=torch.int32,
+                device=q.device,
+            )
+
+        if self.training:
+            assert seqlen_k == seqlen_q
+            is_causal = self.causal
+            dropout_p = self.dropout_p
+        else:
+            is_causal = seqlen_q == seqlen_k
+            dropout_p = 0
+
+        output = flash_attn_unpadded_func(
+            q,
+            k,
+            v,
+            cu_seqlens_q,
+            cu_seqlens_k,
+            seqlen_q,
+            seqlen_k,
+            dropout_p,
+            softmax_scale=self.softmax_scale,
+            causal=is_causal,
+        )
+        if batch_size > 1 and attention_mask is not None and seqlen_q == seqlen_k:
+            output = self.pad_input(output, indices_k, batch_size, seqlen_out)
+        else:
+            new_shape = (batch_size, output.shape[0] // batch_size) + output.shape[1:]
+            output = output.view(new_shape)
+        return output
+
 
 
 # Copied from transformers.models.bart.modeling_bart._make_causal_mask
@@ -144,6 +280,9 @@ class QWenAttention(nn.Module):
         self.logn_tensor = torch.tensor(logn_list)[None, :, None, None]
 
         self.attn_dropout = nn.Dropout(config.attn_dropout_prob)
+        if use_flash_attention:
+            _import_flash_attn()
+            self.core_attention_flash = FlashSelfAttention(causal=True, attention_dropout=0)
 
     def _attn(self, query, key, value, registered_causal_mask, attention_mask=None, head_mask=None):
         attn_weights = torch.matmul(query, key.transpose(-1, -2))
@@ -297,12 +436,18 @@ class QWenAttention(nn.Module):
             logn_tensor = self.logn_tensor[:, seq_start:seq_end, :, :]
             query = query * logn_tensor.expand_as(query)
 
-        query = query.permute(0, 2, 1, 3)
-        key = key.permute(0, 2, 1, 3)
-        value = value.permute(0, 2, 1, 3)
-        attn_output, attn_weight = self._attn(
-            query, key, value, registered_causal_mask, attention_mask, head_mask
-        )
+        if self.training and SUPPORT_TORCH2 and use_flash_attention:
+            attn_output = self.core_attention_flash(query,key,value)
+            attn_weight = None
+        else:
+
+            query = query.permute(0, 2, 1, 3)
+            key = key.permute(0, 2, 1, 3)
+            value = value.permute(0, 2, 1, 3)
+
+            attn_output, attn_weight = self._attn(
+                query, key, value, registered_causal_mask, attention_mask, head_mask
+            )
         context_layer = self._merge_heads(
             attn_output, self.num_heads, self.head_dim
         )
@@ -410,6 +555,10 @@ class QWenPreTrainedModel(PreTrainedModel):
         super().__init__(*inputs, **kwargs)
 
     def _init_weights(self, module):
+        '''
+        There is no need to re_init
+        '''
+        return 
         """Initialize the weights."""
         if isinstance(module, nn.Linear):
             module.weight.data.normal_(mean=0.0, std=self.config.initializer_range)

@@ -41,7 +41,7 @@ SPECIAL_TOKENS = (
     IMSTART,
     IMEND,
 ) + EXTRAS
-IMG_TOKEN_SPAN = 1280
+# IMG_TOKEN_SPAN = 1024
 
 
 def _load_tiktoken_bpe(tiktoken_bpe_file: str) -> Dict[bytes, int]:
@@ -128,6 +128,7 @@ class QWenTokenizer(PreTrainedTokenizer):
             image_start_tag, image_end_tag,
             image_pad_tag
         )
+        self.IMG_TOKEN_SPAN = 1280
 
         self.errors = errors  # how to handle errors in decoding
 
@@ -272,10 +273,10 @@ class QWenTokenizer(PreTrainedTokenizer):
             img_tokens = img_tokens[1:-1]
             img_url = b''.join(img_tokens)
             out_img_tokens = list(map(self.decoder.get, img_url))
-            if len(out_img_tokens) > IMG_TOKEN_SPAN:
+            if len(out_img_tokens) > self.IMG_TOKEN_SPAN:
                 raise ValueError("The content in {}..{} is too long".format(
                     self.image_start_tag, self.image_end_tag))
-            out_img_tokens.extend([self.image_pad_tag] * (IMG_TOKEN_SPAN - len(out_img_tokens)))
+            out_img_tokens.extend([self.image_pad_tag] * (self.IMG_TOKEN_SPAN - len(out_img_tokens)))
             out_img_tokens = [self.image_start_tag] + out_img_tokens + [self.image_end_tag]
             return out_img_tokens
 
