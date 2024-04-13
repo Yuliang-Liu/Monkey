@@ -24,11 +24,15 @@
 # TODO
 
 - [x] Open source code, weight, and data
+- [ ] Support training using 3090 GPUs (24Gb video memory)
 - [ ] Improve Chinese language proficiency
 - [ ] TextMonkey with different LLMs
 
 
 # Model Zoo
+
+TextMonkey was trained using 8 A800 GPUs on a dataset of just 40k image-text pairs, requiring approximately 1 day and 6 hours of training time. It is capable of running inference on a 3090 GPU.
+
 | Method | LLM | STVQA | TextVQA | OCRVQA | DocVQA | InfoVQA | ChartQA | FUNSD | SROIE | POIE | OCRBench |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | BLIP2-OPT-6.7B | OPT-6.7B | 20.9 | 23.5 | 9.7 | 3.2 | 11.3 | 3.4 | 0.2 | 0.1 | 0.3 | 235 |
