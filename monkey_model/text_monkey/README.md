@@ -31,7 +31,7 @@
 
 # Model Zoo
 
-TextMonkey was trained using 8 A800 GPUs on a dataset of just 40k image-text pairs, requiring approximately 1 day and 6 hours of training time. It is capable of running inference on a 3090 GPU.
+TextMonkey was trained using 8 A800 GPUs on a dataset of 400k data, requiring approximately 1 day and 6 hours of training time. It is capable of running inference on a 3090 GPU.
 
 | Method | LLM | STVQA | TextVQA | OCRVQA | DocVQA | InfoVQA | ChartQA | FUNSD | SROIE | POIE | OCRBench |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -48,8 +48,8 @@ TextMonkey was trained using 8 A800 GPUs on a dataset of just 40k image-text pai
 | Monkey | Qwen-7B | 54.7 | 64.3 | 64.4 | 50.1 | 25.8 | 54.0 | 24.1 | 41.9 | 19.9 | 514 |
 | InternVL | - | 62.2 | 59.8 | 30.5 | 28.7 | 23.6 | 45.6 | 6.5 | 26.4 | 25.9 | 517 |
 | InternLM-XComposer2 | InternLM-7B | 59.6 | 62.2 | 49.6 | 39.7 | 28.6 | 51.6 | 15.3 | 34.2 | 49.3 | 511 |
-| TextMonkey (40k data)| Qwen-7B | 61.8 | 65.9 | 71.3 | 64.3 | 28.2 | 58.2 | 32.3 | 47.0 | 27.9 | 561 |
-| TextMonkey (50k data) | Qwen-7B | 61.2 | 64.3 | 72.2 | 66.7 | 28.6 | 59.9 | 42.9 | 46.2 | 32.0 | 558 |
+| TextMonkey (~400k data)| Qwen-7B | 61.8 | 65.9 | 71.3 | 64.3 | 28.2 | 58.2 | 32.3 | 47.0 | 27.9 | 561 |
+| TextMonkey (~500k data) | Qwen-7B | 61.2 | 64.3 | 72.2 | 66.7 | 28.6 | 59.9 | 42.9 | 46.2 | 32.0 | 558 |
 
 
 
@@ -58,8 +58,8 @@ TextMonkey was trained using 8 A800 GPUs on a dataset of just 40k image-text pai
 ```python
 conda create -n textmonkey python=3.10
 conda activate textmonkey
-git clone https://github.com/MelosY/TextMonkey.git
-cd ./TextMonkey
+git clone https://github.com/Yuliang-Liu/Monkey.git
+cd ./Monkey
 pip install -r requirements.txt
 ```
 
