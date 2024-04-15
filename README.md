@@ -85,7 +85,7 @@ Inspired by Qwen-VL, we freeze the Large Language Model (LLM) and introduce LoRA
 ## Inference
 Run the inference code:
 ```
-python ./inference.py --model_path MODEL_PATH  --image_path IMAGE_PATH  --question YOUR_QUESTION
+python ./inference.py --model_path MODEL_PATH  --image_path IMAGE_PATH  --question "YOUR_QUESTION"
 ```
 
 
