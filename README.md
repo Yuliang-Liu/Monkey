@@ -67,6 +67,10 @@ git clone https://github.com/Yuliang-Liu/Monkey.git
 cd ./Monkey
 pip install -r requirements.txt
 ```
+You can download the corresponding version of flash_attention from https://github.com/Dao-AILab/flash-attention/releases/ and use the following code to install:
+```python
+pip install flash_attn-2.3.5+cu117torch2.0cxx11abiFALSE-cp310-cp310-linux_x86_64.whl --no-build-isolation
+```
 
 
 ## Train
