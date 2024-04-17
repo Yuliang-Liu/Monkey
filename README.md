@@ -87,7 +87,7 @@ Inspired by Qwen-VL, we freeze the Large Language Model (LLM) and introduce LoRA
  - Freeze LLM: You need to freeze other modules except LoRA and Resampler modules in ```finetune_multitask.py```.
 
 ## Inference
-Run the inference code:
+Run the inference code for Monkey and Monkey-Chat:
 ```
 python ./inference.py --model_path MODEL_PATH  --image_path IMAGE_PATH  --question "YOUR_QUESTION"
 ```
