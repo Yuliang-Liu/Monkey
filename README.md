@@ -114,6 +114,11 @@ We also provide the source code and the model weight for the original demo, allo
 	python demo.py -c echo840/Monkey 
 	```
 
+For TextMonkey you can download the model weight from [Model Weight](https://www.modelscope.cn/models/lvskiller/TextMonkey) and run the demo code below:
+``` python
+python demo_textmonkey.py -c model_path
+```
+
 Before 14/11/2023, we have observed that for some random pictures Monkey can achieve more accurate results than GPT4V.  
 <br>
 <p align="center">
