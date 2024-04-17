@@ -114,7 +114,7 @@ We also provide the source code and the model weight for the original demo, allo
 	python demo.py -c echo840/Monkey 
 	```
 
-For TextMonkey you can download the model weight from [Model Weight](https://www.modelscope.cn/models/lvskiller/TextMonkey) and run the demo code below:
+For TextMonkey you can download the model weight from [Model Weight](https://www.modelscope.cn/models/lvskiller/TextMonkey)  and run the demo code:
 ``` python
 python demo_textmonkey.py -c model_path
 ```
