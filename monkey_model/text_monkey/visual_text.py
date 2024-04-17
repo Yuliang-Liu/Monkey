@@ -21,7 +21,6 @@ from torchvision.transforms import InterpolationMode
 from monkey_model.text_monkey.window import CrossWindowAttention,PatchMerging
 from monkey_model.text_monkey.resampler import *
 import random
-import ipdb
 import numpy as np
 import matplotlib.pyplot as plt
 
