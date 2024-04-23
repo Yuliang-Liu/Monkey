@@ -74,7 +74,7 @@ pip install flash_attn-2.3.5+cu117torch2.0cxx11abiFALSE-cp39-cp39-linux_x86_64.w
 
 ## Train
 
-We also offer Monkey's model definition and training code, which you can explore above. You can execute the training code through executing `finetune_ds_debug.sh`, `finetune_textmonkey.sh`.
+We also offer Monkey's model definition and training code, which you can explore above. You can execute the training code through executing `finetune_ds_debug.sh` for Monkey and `finetune_textmonkey.sh` for TextMonkey.
 
 The json file used for Monkey training can be downloaded at [Link](https://drive.google.com/file/d/18z_uQTe8Jq61V5rgHtxOt85uKBodbvw1/view?usp=sharing).
 
@@ -137,7 +137,7 @@ Before 31/1/2024, Monkey-chat achieved the fifth rank in the Multimodal Model ca
 
 The json file used for Monkey training can be downloaded at [Link](https://drive.google.com/file/d/18z_uQTe8Jq61V5rgHtxOt85uKBodbvw1/view?usp=sharing).
 
-The data from our multi-level description generation method is now open-sourced and available for download at [Link](https://huggingface.co/datasets/echo840/Detailed_Caption). Examples:
+The data from our multi-level description generation method is now open-sourced and available for download at [Link](https://huggingface.co/datasets/echo840/Detailed_Caption). We already upload the images used in multi-level description. Examples:
 
 <br>
 <p align="center">
