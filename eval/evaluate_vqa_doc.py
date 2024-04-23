@@ -45,9 +45,9 @@ ds_collections = {
         'metric': 'accuracy',
         'max_new_tokens': 10,
     },
-    'chartqa_ureader': {
+    'chartqa': {
         'train': 'data/chartqa/train_augmented.jsonl',
-        'test': 'data/chartqa/chartqa_ureader.jsonl',
+        'test': 'data/chartqa/chartqa.jsonl',
         'metric': 'accuracy',
         'max_new_tokens': 100,
     },
