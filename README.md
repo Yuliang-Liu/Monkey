@@ -134,6 +134,7 @@ Before 31/1/2024, Monkey-chat achieved the fifth rank in the Multimodal Model ca
 
  
 ## Dataset
+You can download the training and testing data used by monkey from [Monkey_Data](https://huggingface.co/datasets/echo840/Monkey_Data).
 
 The json file used for Monkey training can be downloaded at [Link](https://drive.google.com/file/d/18z_uQTe8Jq61V5rgHtxOt85uKBodbvw1/view?usp=sharing).
 
