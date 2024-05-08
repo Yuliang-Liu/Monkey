@@ -73,7 +73,7 @@ ds_collections = {
     },
     'gqa_testdev': {
         'train': 'data/gqa/train.jsonl',
-        'test': 'data/gqa/gqa_testdev_new.json',
+        'test': 'data/gqa/gqa_testdev_new.jsonl',
         'metric': 'accuracy',
         'max_new_tokens': 10,
     },
