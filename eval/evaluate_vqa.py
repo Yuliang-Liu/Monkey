@@ -499,5 +499,5 @@ if __name__ == '__main__':
             prompt = '<img>{}</img> {} When the provided information is insufficient, respond with "unanswerable". Answer: '  #vizwiz 68.3 # this prompt will achieve better results.
         else:
             # prompt = '<img>{}</img>{} Answer:'
-            prompt = '<img>{}</img>{} Answer: '  # this prompt will achieve better results.
+            prompt = '<img>{}</img> {} Answer: '  # this prompt will achieve better results.
         evaluate(model,tokenizer,prompt,args,k)
