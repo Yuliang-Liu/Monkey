@@ -495,7 +495,7 @@ if __name__ == '__main__':
     random.seed(args.seed)
     for k,_ in ds_collections.items():
         if "vizwiz_val" in k:
-            prompt = '<img>{}</img> {} When the provided information is insufficient, respond with "Unanswerable". Answer:'
+            prompt = '<img>{}</img> {} When the provided information is insufficient, respond with "unanswerable". Answer: '
         else:
-            prompt = '<img>{}</img>{} Answer:'
+            prompt = '<img>{}</img>{} Answer: '
         evaluate(model,tokenizer,prompt,args,k)
