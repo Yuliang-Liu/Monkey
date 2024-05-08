@@ -35,7 +35,7 @@ ds_collections = {
     },
     'chartqa': {
         'train': 'data/chartqa/train_augmented.jsonl',
-        'test': 'data/chartqa/chartqa.jsonl',
+        'test': 'data/chartqa/chartqa_test.jsonl',
         'metric': 'relaxed_accuracy',
         'max_new_tokens': 100,
     },
