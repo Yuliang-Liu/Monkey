@@ -24,7 +24,7 @@
 > Zhang Li, Biao Yang, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, Yuliang Liu, Xiang Bai <br>
 [![Paper](https://img.shields.io/badge/Paper-CVPR'24_Highlight-red)](README.md)
 [![Source_code](https://img.shields.io/badge/Code-Available-white)](README.md)
-[![Demo](https://img.shields.io/badge/Demo-blue)](http://vlrlab-monkey.xyz:7681/)
+[![Demo](https://img.shields.io/badge/Demo-blue)](http://27.16.227.138:7681/)
 [![Detailed Caption](https://img.shields.io/badge/Detailed_Caption-yellow)](http://huggingface.co/datasets/echo840/Detailed_Caption)
 [![Model Weight](https://img.shields.io/badge/Model_Weight-gray)](http://huggingface.co/echo840/Monkey)
 [![Model Weight in Wisemodel](https://img.shields.io/badge/Model_Weight_in_Wisemodel-gray)](https://www.wisemodel.cn/models/HUST-VLRLab/Monkey/)
@@ -89,7 +89,7 @@ python ./inference.py --model_path MODEL_PATH  --image_path IMAGE_PATH  --questi
 ## Demo
 
 Demo is fast and easy to use. Simply uploading an image from your desktop or phone, or capture one directly. 
-[Demo_chat](http://vlrlab-monkey.xyz:7681) is also launched as an upgraded version of the original demo to deliver an enhanced interactive experience.
+[Demo_chat](http://27.16.227.138:7681) is also launched as an upgraded version of the original demo to deliver an enhanced interactive experience.
 
 We also provide the source code and the model weight for the original demo, allowing you to customize certain parameters for a more unique experience. The specific operations are as follows:
  1. Make sure you have configured the [environment](#environment).
