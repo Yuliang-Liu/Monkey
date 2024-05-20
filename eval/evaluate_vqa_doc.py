@@ -37,14 +37,6 @@ ds_collections = {
         'metric': 'accuracy',
         'max_new_tokens': 100,
     },
-    'textvqa_val': {
-        'train': 'data/textvqa/textvqa_train.jsonl',
-        'test': 'data/textvqa/textvqa_val.jsonl',
-        'question': 'data/textvqa/textvqa_val_questions.json',
-        'annotation': 'data/textvqa/textvqa_val_annotations.json',
-        'metric': 'accuracy',
-        'max_new_tokens': 10,
-    },
     'chartqa': {
         'train': 'data/chartqa/train_augmented.jsonl',
         'test': 'data/chartqa/chartqa.jsonl',
