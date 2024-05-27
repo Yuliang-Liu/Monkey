@@ -325,7 +325,7 @@ def train():
 
 
     tokenizer = QWenTokenizer.from_pretrained(
-        model_args.model_name_or_path,
+        "monkey_model",
         cache_dir=training_args.cache_dir,
         model_max_length=training_args.model_max_length,
         padding_side="right",
