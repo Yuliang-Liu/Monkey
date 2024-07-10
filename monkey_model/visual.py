@@ -254,7 +254,7 @@ class VisualAttention(nn.Module):
         # query/key/value: [sq, b, h]
         sq, b, _ = query.size()
 
-        assert query is key, 'Only Support Self-Attention Currently'
+        assert torch.equal(query, key), 'Only Support Self-Attention Currently'
         sk = sq
         mixed_x_layer = self.in_proj(query)
         if idx == None:
