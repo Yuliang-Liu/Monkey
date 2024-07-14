@@ -38,7 +38,6 @@
 [![Source_code](https://img.shields.io/badge/Code-Available-white)](monkey_model/text_monkey/README.md)
 [![Data](https://img.shields.io/badge/Data-yellow)](https://huggingface.co/datasets/MelosY/TextMonkey_Data/tree/main)
 [![Model Weight](https://img.shields.io/badge/Model_Weight-gray)](https://www.modelscope.cn/models/lvskiller/TextMonkey)
-[![Demo TextMonkey](https://img.shields.io/badge/Demo_TextMonkey-blue)](http://vlrlab-monkey.xyz:7685/)
 
     
 ## News 
