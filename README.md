@@ -39,6 +39,10 @@
 [![Data](https://img.shields.io/badge/Data-yellow)](https://huggingface.co/datasets/MelosY/TextMonkey_Data/tree/main)
 [![Model Weight](https://img.shields.io/badge/Model_Weight-gray)](https://www.modelscope.cn/models/lvskiller/TextMonkey)
 
+> [**Mini-Monkey: Alleviate the Sawtooth Effect by Multi-Scale Adaptive Cropping**](https://arxiv.org/pdf/2408.02034)<br>
+> Mingxin Huang, Yuliang Liu, Dingkang Liang, Lianwen Jin, Xiang Bai <br>
+[![arXiv](https://img.shields.io/badge/Arxiv-2408.02034-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2408.02034) 
+
     
 ## News 
 * ```2024.8.6  ``` 🚀 We release the paper [Mini-Monkey](https://arxiv.org/abs/2408.02034). You can try the demo at [demo](https://b89c49942d9340897e.gradio.live). The code will be coming soon.
