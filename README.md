@@ -45,7 +45,7 @@
 
     
 ## News 
-* ```2024.8.6  ``` 🚀 We release the paper [Mini-Monkey](https://arxiv.org/abs/2408.02034). You can try the demo at [demo](https://841a7c5fcd9b4b4f4a.gradio.live). The code will be coming soon.
+* ```2024.8.6  ``` 🚀 We release the paper [Mini-Monkey](https://arxiv.org/abs/2408.02034). You can try the demo at [demo](https://eec45d0b13c080aba7.gradio.live). The code will be coming soon.
 * ```2024.4.13 ``` 🚀 Sourced code for [TextMonkey](monkey_model/text_monkey/README.md) is released.
 * ```2024.4.5  ``` 🚀 Monkey is nominated as CVPR 2024 Highlight paper.
 * ```2024.3.8  ``` 🚀 We release the paper [TextMonkey](https://arxiv.org/abs/2403.04473).
