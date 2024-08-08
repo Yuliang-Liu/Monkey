@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://v1.ax1x.com/2024/04/13/7ySieU.png" width="500" style="margin-bottom: 0.2;"/>
+    <img src="https://v1.ax1x.com/2024/08/08/7GrxDh.png" width="500" style="margin-bottom: 0.2;"/>
 <p>
 
 <h3 align="center"> <a href="https://arxiv.org/abs/2311.06607">Monkey: Image Resolution and Text Label Are Important Things for Large Multi-modal Models</a></h3>
@@ -42,7 +42,7 @@
 > [**Mini-Monkey: Alleviate the Sawtooth Effect by Multi-Scale Adaptive Cropping**](https://arxiv.org/pdf/2408.02034)<br>
 > Mingxin Huang, Yuliang Liu, Dingkang Liang, Lianwen Jin, Xiang Bai <br>
 [![arXiv](https://img.shields.io/badge/Arxiv-2408.02034-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2408.02034) 
-
+[![Demo](https://img.shields.io/badge/Demo-blue)](https://2516ec8bce461ebe7e.gradio.live)
     
 ## News 
 * ```2024.8.6  ``` 🚀 We release the paper [Mini-Monkey](https://arxiv.org/abs/2408.02034). You can try the demo at [demo](https://2516ec8bce461ebe7e.gradio.live). The code will be coming soon.
