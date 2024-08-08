@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://v1.ax1x.com/2024/08/08/7GrxDh.png" width="500" style="margin-bottom: 0.2;"/>
+    <img src="https://v1.ax1x.com/2024/08/08/7GrV3Y.png" width="500" style="margin-bottom: 0.2;"/>
 <p>
 
 <h3 align="center"> <a href="https://arxiv.org/abs/2311.06607">Monkey: Image Resolution and Text Label Are Important Things for Large Multi-modal Models</a></h3>
@@ -45,7 +45,7 @@
 [![Demo](https://img.shields.io/badge/Demo-blue)](https://2516ec8bce461ebe7e.gradio.live)
     
 ## News 
-* ```2024.8.6  ``` 🚀 We release the paper [Mini-Monkey](https://arxiv.org/abs/2408.02034). You can try the demo at [demo](https://2516ec8bce461ebe7e.gradio.live). The code will be coming soon.
+* ```2024.8.6  ``` 🚀 We release the paper [Mini-Monkey](https://arxiv.org/abs/2408.02034).
 * ```2024.4.13 ``` 🚀 Sourced code for [TextMonkey](monkey_model/text_monkey/README.md) is released.
 * ```2024.4.5  ``` 🚀 Monkey is nominated as CVPR 2024 Highlight paper.
 * ```2024.3.8  ``` 🚀 We release the paper [TextMonkey](https://arxiv.org/abs/2403.04473).
