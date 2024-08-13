@@ -3,7 +3,7 @@
 <br>
 
 <p align="center">
-    <img src="https://v1.ax1x.com/2024/08/13/7GJ8Iw.png" width="300"/>
+    <img src="https://v1.ax1x.com/2024/08/13/7GXu34.png" width="300"/>
 <p>
 
 > [**Mini-Monkey: Multi-Scale Adaptive Cropping for Multimodal Large Language Models**](https://arxiv.org/abs/2408.02034)<br>
@@ -74,6 +74,60 @@ We use [VLMEvalKit](https://github.com/open-compass/VLMEvalKit) repositories for
 
 
 ## Train
+
+### Prepare Training Datasets
+
+Inspired by InternVL 1.2, we adopted a [LLaVA-ZH](https://huggingface.co/datasets/openbmb/llava_zh), [DVQA](https://github.com/kushalkafle/DVQA_dataset), [ChartQA](https://github.com/vis-nlp/ChartQA), [AI2D](https://allenai.org/data/diagrams), [DocVQA](https://www.docvqa.org/datasets), [GeoQA+](https://github.com/SCNU203/GeoQA-Plus), and [SynthDoG-EN](https://huggingface.co/datasets/naver-clova-ix/synthdog-en). Most of the data remains consistent with InternVL 1.2.
+
+First, download the [annotation files](https://huggingface.co/OpenGVLab/InternVL/resolve/main/playground.zip) and place them in the `playground/opensource/` folder.
+
+Second, download all the images we used.
+
+- AI2D: [ai2d_images](https://drive.google.com/file/d/1dqqa3MnrxMXaU_K9JA6C83je32ibwdOY/view?usp=sharing) (provided by InternLM-XComposer)
+- ChartQA: [ChartQA Dataset](https://huggingface.co/datasets/ahmed-masry/ChartQA/resolve/main/ChartQA%20Dataset.zip)
+- COCO: [train2017](http://images.cocodataset.org/zips/train2017.zip)
+- DocVQA: [train](https://datasets.cvc.uab.es/rrc/DocVQA/train.tar.gz), [val](https://datasets.cvc.uab.es/rrc/DocVQA/val.tar.gz), [test](https://datasets.cvc.uab.es/rrc/DocVQA/test.tar.gz)
+- DVQA: [images](https://drive.google.com/file/d/1iKH2lTi1-QxtNUVRxTUWFvUvRHq6HAsZ/view)
+- LLaVA-Pretrain: [images](https://huggingface.co/datasets/liuhaotian/LLaVA-Pretrain/resolve/main/images.zip)
+- SynthDoG-EN: We only use 00000~00004 parquet files for now, with a total of 30K images. We provide the converted [images](https://huggingface.co/OpenGVLab/InternVL/resolve/main/synthdog-en-images.zip).
+- GeoQA+: [GeoQA+](https://drive.google.com/file/d/1KL4_wIzr3p8XSKMkkLgYcYwCbb0TzZ9O/view) [images](https://huggingface.co/OpenGVLab/InternVL/resolve/main/geoqa%2B_images.zip)
+
+Then, organize the data as follows in `playground/data`:
+
+```none
+playground/
+├── opensource
+│   ├── ai2d_train_12k.jsonl
+│   ├── chartqa_train_18k.jsonl
+│   ├── docvqa_train_10k.jsonl
+│   ├── dvqa_train_200k.jsonl
+│   ├── geoqa+.jsonl
+│   ├── llava_instruct_150k_zh.jsonl
+│   └── synthdog_en.jsonl
+├── data
+│   ├── ai2d
+│   │   ├── abc_images
+│   │   └── images
+│   ├── chartqa
+│   │   ├── test
+│   │   ├── train
+│   │   └── val
+│   ├── coco
+│   │   └── train2017
+│   ├── docvqa
+│   │   ├── test
+│   │   ├── train
+│   │   └── val
+│   ├── dvqa
+│   │   └── images
+│   ├── llava
+│   │   └── llava_pretrain
+│   │       └── images
+│   ├── synthdog-en
+│   │   └── images
+│   ├── geoqa+
+│   │   └── images
+```
 
 Execute the training code:
 ```python
