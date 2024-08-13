@@ -1,5 +1,5 @@
 import torch
-from internvl.model.internvl_chat import InternVLChatModel
+from internvl.model.internvl_chat import MiniMonkeyChatModel
 from transformers import AutoTokenizer
 import argparse
 
@@ -9,7 +9,7 @@ argparse.add_argument("output_path", type=str, help="Path to the output model")
 args = argparse.parse_args()
 
 print("Loading model...")
-model = InternVLChatModel.from_pretrained(
+model = MiniMonkeyChatModel.from_pretrained(
     args.input_path, low_cpu_mem_usage=True, torch_dtype=torch.bfloat16).eval()
 print("Loading tokenizer...")
 tokenizer = AutoTokenizer.from_pretrained(args.input_path, trust_remote_code=True)
