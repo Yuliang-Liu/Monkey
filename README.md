@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://v1.ax1x.com/2024/08/08/7GrV3Y.png" width="500" style="margin-bottom: 0.2;"/>
+    <img src="https://v1.ax1x.com/2024/08/13/7GXwAh.png" width="500" style="margin-bottom: 0.2;"/>
 <p>
 
 <h3 align="center"> <a href="https://arxiv.org/abs/2311.06607">Monkey: Image Resolution and Text Label Are Important Things for Large Multi-modal Models</a></h3>
@@ -41,10 +41,12 @@
 
 > [**Mini-Monkey: Multi-Scale Adaptive Cropping for Multimodal Large Language Models**](https://arxiv.org/pdf/2408.02034)<br>
 > Mingxin Huang, Yuliang Liu, Dingkang Liang, Lianwen Jin, Xiang Bai <br>
-[![arXiv](https://img.shields.io/badge/Arxiv-2408.02034-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2408.02034) 
+[![arXiv](https://img.shields.io/badge/Arxiv-2408.02034-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2408.02034)
+[![Source_code](https://img.shields.io/badge/Code-Available-white)](project/mini_monkey)
 [![Demo](https://img.shields.io/badge/Demo-blue)](http://vlrlab-monkey.xyz:7685)
     
 ## News 
+* ```2024.8.13 ``` 🚀 Sourced code for [Mini-Monkey](project/mini_monkey) is released.
 * ```2024.8.6  ``` 🚀 We release the paper [Mini-Monkey](https://arxiv.org/abs/2408.02034).
 * ```2024.4.13 ``` 🚀 Sourced code for [TextMonkey](monkey_model/text_monkey/README.md) is released.
 * ```2024.4.5  ``` 🚀 Monkey is nominated as CVPR 2024 Highlight paper.
@@ -60,6 +62,7 @@ Monkey-Chat
 | Model|Language Model|Transformers(HF) |MMBench-Test|CCBench|MME|SeedBench_IMG|MathVista-MiniTest|HallusionBench-Avg|AI2D Test|OCRBench|
 |---------------|---------|-----------------------------------------|---|---|---|---|---|---|---|---|
 |Monkey-Chat|Qwev-7B|[🤗echo840/Monkey-Chat](https://huggingface.co/echo840/Monkey-Chat)|72.4|48|1887.4|68.9|34.8|39.3|68.5|534|
+|Mini-Monkey|internlm2-chat-1_8b|[Mini-Monkey](https://www.modelscope.cn/models/HUST-LVRLab/Mini-Monkey)|---|75.5|1881.9|71.3|47.3|38.7|74.7|802|
 
 
 ## Environment
@@ -209,11 +212,17 @@ If you wish to refer to the baseline results published here, please use the foll
   journal={arXiv preprint arXiv:2403.04473},
   year={2024}
 }
+@article{huang2024mini,
+  title={Mini-Monkey: Multi-Scale Adaptive Cropping for Multimodal Large Language Models},
+  author={Huang, Mingxin and Liu, Yuliang and Liang, Dingkang and Jin, Lianwen and Bai, Xiang},
+  journal={arXiv preprint arXiv:2408.02034},
+  year={2024}
+}
 ```
 
 ## Acknowledgement
 
-[Qwen-VL](https://github.com/QwenLM/Qwen-VL.git), [LLAMA](https://github.com/meta-llama/llama), [LLaVA](https://github.com/haotian-liu/LLaVA), [OpenCompass](https://github.com/open-compass/opencompass), [InternLM](https://github.com/InternLM/InternLM). 
+[Qwen-VL](https://github.com/QwenLM/Qwen-VL.git), [LLAMA](https://github.com/meta-llama/llama), [LLaVA](https://github.com/haotian-liu/LLaVA), [OpenCompass](https://github.com/open-compass/opencompass), [InternLM](https://github.com/InternLM/InternLM), [InternVL](https://github.com/OpenGVLab/InternVL). 
 
 
 ## Copyright
