@@ -11,7 +11,7 @@
 
 [![arXiv](https://img.shields.io/badge/Arxiv-2408.02034-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2408.02034) 
 [![Demo](https://img.shields.io/badge/Demo-blue)](http://vlrlab-monkey.xyz:7685)
-[![Model Weight](https://img.shields.io/badge/Model_Weight-gray)](https://www.modelscope.cn/models/HUST-LVRLab/Mini-Monkey)
+[![Model Weight](https://img.shields.io/badge/Model_Weight-gray)](https://www.wisemodel.cn/models/HUST-VLRLab/Mini-Monkey)
 
 
 -----
@@ -72,6 +72,8 @@ python setup.py install
 
 We use [VLMEvalKit](https://github.com/open-compass/VLMEvalKit) repositories for model evaluation. 
 
+## Inference
+We provide an example of inference code [here](https://github.com/Yuliang-Liu/Monkey/blob/main/project/mini_monkey/demo.py)
 
 ## Train
 

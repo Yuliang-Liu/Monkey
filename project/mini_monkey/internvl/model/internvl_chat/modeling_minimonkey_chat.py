@@ -251,7 +251,7 @@ class MiniMonkeyChatModel(PreTrainedModel):
         vit_embeds = self.mlp1(vit_embeds)
         return vit_embeds
 
-    def batch_chat(self, tokenizer, pixel_values, questions, generation_config, num_patches_list=None,
+    def batch_chat(self, tokenizer, pixel_values, target_aspect_ratio, questions, generation_config,  use_scm=False, num_patches_list=None,
                    history=None, return_history=False, IMG_START_TOKEN='<img>', IMG_END_TOKEN='</img>',
                    IMG_CONTEXT_TOKEN='<IMG_CONTEXT>', verbose=False, image_counts=None):
         if history is not None or return_history:
@@ -293,13 +293,15 @@ class MiniMonkeyChatModel(PreTrainedModel):
             pixel_values=pixel_values,
             input_ids=input_ids,
             attention_mask=attention_mask,
+            target_aspect_ratio=target_aspect_ratio,
+            use_scm=use_scm,
             **generation_config
         )
         responses = tokenizer.batch_decode(generation_output, skip_special_tokens=True)
         responses = [response.split(template.sep)[0].strip() for response in responses]
         return responses
 
-    def chat(self, tokenizer, pixel_values, question, generation_config, history=None, return_history=False,
+    def chat(self, tokenizer, pixel_values, target_aspect_ratio, question, generation_config, use_scm=False, history=None, return_history=False,
              num_patches_list=None, IMG_START_TOKEN='<img>', IMG_END_TOKEN='</img>', IMG_CONTEXT_TOKEN='<IMG_CONTEXT>',
              verbose=False):
 
@@ -341,6 +343,8 @@ class MiniMonkeyChatModel(PreTrainedModel):
             pixel_values=pixel_values,
             input_ids=input_ids,
             attention_mask=attention_mask,
+            target_aspect_ratio=target_aspect_ratio,
+            use_scm=use_scm,
             **generation_config
         )
         response = tokenizer.batch_decode(generation_output, skip_special_tokens=True)[0]
@@ -361,10 +365,12 @@ class MiniMonkeyChatModel(PreTrainedModel):
             pixel_values: Optional[torch.FloatTensor] = None,
             input_ids: Optional[torch.FloatTensor] = None,
             attention_mask: Optional[torch.LongTensor] = None,
+            target_aspect_ratio: Optional[torch.LongTensor] = None,
             visual_features: Optional[torch.FloatTensor] = None,
             generation_config: Optional[GenerationConfig] = None,
             output_hidden_states: Optional[bool] = None,
             return_dict: Optional[bool] = None,
+            use_scm: Optional[bool] = False,
             **generate_kwargs,
     ) -> torch.LongTensor:
 
@@ -387,46 +393,47 @@ class MiniMonkeyChatModel(PreTrainedModel):
         else:
             input_embeds = self.language_model.get_input_embeddings()(input_ids)
 
-        self.language_model.model.img_idx = torch.where(selected==True)
-        self.language_model.model.high_token = target_aspect_ratio[0]*target_aspect_ratio[1] * 256
-        batch_size, seq_length = input_embeds.shape[:2]
-        device = input_embeds.device
-        position_ids = torch.arange(
-            0, seq_length, dtype=torch.long, device=device
-        )
-        position_ids = position_ids.unsqueeze(0)
-        new_attention_mask = self.language_model.model._prepare_decoder_attention_mask(
-            attention_mask, (batch_size, seq_length), input_embeds, 0
-        )
-        tmp_layer_outputs = self.language_model.model.layers[0](
-            input_embeds,
-            attention_mask=new_attention_mask,
-            position_ids=position_ids,
-            past_key_value=None,
-            output_attentions=False,
-            use_cache=False,
-        )
-        
-        tmp_layer_outputs2 = self.language_model.model.layers[1](
-            tmp_layer_outputs[0],
-            attention_mask=new_attention_mask,
-            position_ids=position_ids,
-            past_key_value=None,
-            output_attentions=True,
-            use_cache=False,
-        )
+        if use_scm:
+            self.language_model.model.img_idx = torch.where(selected==True)
+            self.language_model.model.high_token = target_aspect_ratio[0]*target_aspect_ratio[1] * self.num_image_token
+            batch_size, seq_length = input_embeds.shape[:2]
+            device = input_embeds.device
+            position_ids = torch.arange(
+                0, seq_length, dtype=torch.long, device=device
+            )
+            position_ids = position_ids.unsqueeze(0)
+            new_attention_mask = self.language_model.model._prepare_decoder_attention_mask(
+                attention_mask, (batch_size, seq_length), input_embeds, 0
+            )
+            tmp_layer_outputs = self.language_model.model.layers[0](
+                input_embeds,
+                attention_mask=new_attention_mask,
+                position_ids=position_ids,
+                past_key_value=None,
+                output_attentions=False,
+                use_cache=False,
+            )
+            
+            tmp_layer_outputs2 = self.language_model.model.layers[1](
+                tmp_layer_outputs[0],
+                attention_mask=new_attention_mask,
+                position_ids=position_ids,
+                past_key_value=None,
+                output_attentions=True,
+                use_cache=False,
+            )
 
-        tmp_attn = tmp_layer_outputs2[1]
-        tmp_attn = tmp_attn[:,:,self.language_model.model.img_idx[0][0]+self.language_model.model.high_token:,self.language_model.model.img_idx[0][0]:self.language_model.model.img_idx[0][0]+self.language_model.model.high_token]
-        tmp_attn = tmp_attn.mean(2)
-        tmp_idx = tmp_attn.mean(1).topk(int(tmp_attn.shape[-1] * 0.5)).indices + self.language_model.model.img_idx[0][0]
-        top_attention_rank_index = tmp_idx.sort().values[0]
-        device = input_embeds.device
-        top_attention_rank_index = torch.cat((torch.arange(self.language_model.model.img_idx[0][0],device=device), top_attention_rank_index, torch.arange(self.language_model.model.img_idx[0][0]+self.language_model.model.high_token+1, input_embeds.shape[1],device=device)))
-        input_embeds = input_embeds[:,top_attention_rank_index]
-        attention_mask = torch.ones(
-            (input_embeds.shape[0], input_embeds.shape[1]), dtype=torch.bool, device=device
-        )
+            tmp_attn = tmp_layer_outputs2[1]
+            tmp_attn = tmp_attn[:,:,self.language_model.model.img_idx[0][0]+self.language_model.model.high_token:,self.language_model.model.img_idx[0][0]:self.language_model.model.img_idx[0][0]+self.language_model.model.high_token]
+            tmp_attn = tmp_attn.mean(2)
+            tmp_idx = tmp_attn.mean(1).topk(int(tmp_attn.shape[-1] * 0.5)).indices + self.language_model.model.img_idx[0][0]
+            top_attention_rank_index = tmp_idx.sort().values[0]
+            device = input_embeds.device
+            top_attention_rank_index = torch.cat((torch.arange(self.language_model.model.img_idx[0][0],device=device), top_attention_rank_index, torch.arange(self.language_model.model.img_idx[0][0]+self.language_model.model.high_token+1, input_embeds.shape[1],device=device)))
+            input_embeds = input_embeds[:,top_attention_rank_index]
+            attention_mask = torch.ones(
+                (input_embeds.shape[0], input_embeds.shape[1]), dtype=torch.bool, device=device
+            )
 
         outputs = self.language_model.generate(
             inputs_embeds=input_embeds,

@@ -44,7 +44,8 @@
 [![arXiv](https://img.shields.io/badge/Arxiv-2408.02034-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2408.02034)
 [![Source_code](https://img.shields.io/badge/Code-Available-white)](project/mini_monkey)
 [![Demo](https://img.shields.io/badge/Demo-blue)](http://vlrlab-monkey.xyz:7685)
-    
+[![Model Weight](https://img.shields.io/badge/Model_Weight-gray)](https://www.wisemodel.cn/models/HUST-VLRLab/Mini-Monkey)
+
 ## News 
 * ```2024.8.13 ``` 🚀 Sourced code for [Mini-Monkey](project/mini_monkey) is released.
 * ```2024.8.6  ``` 🚀 We release the paper [Mini-Monkey](https://arxiv.org/abs/2408.02034).
@@ -62,7 +63,7 @@ Monkey-Chat
 | Model|Language Model|Transformers(HF) |MMBench-Test|CCBench|MME|SeedBench_IMG|MathVista-MiniTest|HallusionBench-Avg|AI2D Test|OCRBench|
 |---------------|---------|-----------------------------------------|---|---|---|---|---|---|---|---|
 |Monkey-Chat|Qwev-7B|[🤗echo840/Monkey-Chat](https://huggingface.co/echo840/Monkey-Chat)|72.4|48|1887.4|68.9|34.8|39.3|68.5|534|
-|Mini-Monkey|internlm2-chat-1_8b|[Mini-Monkey](https://www.modelscope.cn/models/HUST-LVRLab/Mini-Monkey)|---|75.5|1881.9|71.3|47.3|38.7|74.7|802|
+|Mini-Monkey|internlm2-chat-1_8b|[Mini-Monkey](https://www.wisemodel.cn/models/HUST-VLRLab/Mini-Monkey)|---|75.5|1881.9|71.3|47.3|38.7|74.7|802|
 
 
 ## Environment
