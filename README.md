@@ -55,7 +55,6 @@
 * ```2024.3.8  ``` 🚀 We release the paper [TextMonkey](https://arxiv.org/abs/2403.04473).
 * ```2024.2.27 ``` 🚀 Monkey is accepted by CVPR 2024. 
 * ```2024.1.3  ``` 🚀 Release the basic data generation pipeline. [Data Generation](./data_generation)
-* ```2023.12.16``` 🚀 Monkey can be trained using 8 NVIDIA 3090 GPUs. See subsection [train](#Train) for details.
 * ```2023.11.06``` 🚀 We release the paper [Monkey](https://arxiv.org/abs/2311.06607).
 
 ## 🐳 Model Zoo
