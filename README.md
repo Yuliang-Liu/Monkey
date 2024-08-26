@@ -45,7 +45,7 @@
 [![Source_code](https://img.shields.io/badge/Code-Available-white)](project/mini_monkey)
 [![Demo](https://img.shields.io/badge/Demo-blue)](http://vlrlab-monkey.xyz:7685)
 [![Model Weight](https://img.shields.io/badge/Model_Weight-gray)](https://huggingface.co/mx262/MiniMokney)
-[![Model Weight in Wisemodel](https://img.shields.io/badge/Model_Weight-gray)](https://www.wisemodel.cn/models/HUST-VLRLab/Mini-Monkey)
+[![Model Weight in Wisemodel](https://img.shields.io/badge/Model_Weight_in_Wisemodel-gray)](https://www.wisemodel.cn/models/HUST-VLRLab/Mini-Monkey)
 
 ## News 
 * ```2024.8.13 ``` 🚀 Sourced code for [Mini-Monkey](project/mini_monkey) is released.
