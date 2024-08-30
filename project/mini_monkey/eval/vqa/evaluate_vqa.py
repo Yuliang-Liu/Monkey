@@ -10,7 +10,7 @@ from typing import Optional
 
 import torch
 from internvl.model.internvl_chat import InternVLChatModel
-from internvl.train.dataset import build_transform, dynamic_preprocess
+from internvl.train.dataset import build_transform, dynamic_preprocess, dynamic_preprocess2
 from PIL import Image
 from textvqa_eval import TextVQAAccuracyEvaluator
 from tqdm import tqdm
@@ -223,7 +223,7 @@ def collate_fn(batches, tokenizer):
 class VQADataset(torch.utils.data.Dataset):
 
     def __init__(self, train, test, prompt, few_shot, input_size=224, dynamic_image_size=False,
-                 use_thumbnail=False, max_num=6):
+                 use_thumbnail=False, max_num=6, ds_name=None):
         self.test = open(test).readlines()
         self.prompt = prompt
         self.input_size = input_size
@@ -234,6 +234,32 @@ class VQADataset(torch.utils.data.Dataset):
         if few_shot > 0:
             self.train = open(train).readlines()
         self.transform = build_transform(is_train=False, input_size=input_size)
+        self.ds_name = ds_name
+
+        if self.ds_name == 'chartqa_test_human':
+            self.min_num1 = 6
+            self.max_num1 = 12
+            self.min_num2 = 2
+            self.max_num2 = 5
+            self.use_thumbnail = True
+        elif self.ds_name == 'chartqa_test_augmented':
+            self.min_num1 = 6
+            self.max_num1 = 12
+            self.min_num2 = 2
+            self.max_num2 = 5
+            self.use_thumbnail = False
+        elif self.ds_name == 'docvqa_test':
+            self.min_num1 = 11
+            self.max_num1 = 23
+            self.min_num2 = 2
+            self.max_num2 = 10
+            self.use_thumbnail = True
+        else:
+            self.min_num1 = 12
+            self.max_num1 = 23
+            self.min_num2 = 3
+            self.max_num2 = 7
+            self.use_thumbnail = False
 
     def __len__(self):
         return len(self.test)
@@ -253,15 +279,19 @@ class VQADataset(torch.utils.data.Dataset):
                     sample['question']) + f" {sample['answer']}"
 
         image = Image.open(image).convert('RGB')
+
         if self.dynamic_image_size:
-            images = dynamic_preprocess(image, image_size=self.input_size,
-                                        use_thumbnail=self.use_thumbnail,
-                                        min_num=7, max_num=self.max_num)
+            images, target_aspect_ratio = dynamic_preprocess(image, image_size=self.input_size,
+                                        use_thumbnail=self.use_thumbnail, min_num=self.min_num1,
+                                        max_num=self.max_num1)
         else:
             images = [image]
+        # 11 5， 1 5
+        images = images + dynamic_preprocess2(image, min_num=self.min_num2, max_num=self.max_num2,
+                                        image_size=self.input_size, use_thumbnail=True, prior_aspect_ratio=target_aspect_ratio)
+
         pixel_values = [self.transform(image) for image in images]
         pixel_values = torch.stack(pixel_values)
-
         if len(self.prompt) != 0:
             question = question + ' ' + self.prompt
         return {
@@ -325,6 +355,7 @@ def evaluate_chat_model():
     ai2d_prompt = ''
     random.seed(args.seed)
     summaries = []
+
     for ds_name in args.datasets:
         if 'vizwiz' in ds_name:
             input_prompt = vizwiz_prompt + base_prompt
@@ -343,7 +374,8 @@ def evaluate_chat_model():
             input_size=image_size,
             dynamic_image_size=args.dynamic,
             use_thumbnail=use_thumbnail,
-            max_num=args.max_num
+            max_num=args.max_num,
+            ds_name=ds_name
         )
         dataloader = torch.utils.data.DataLoader(
             dataset=dataset,
@@ -504,7 +536,6 @@ if __name__ == '__main__':
     parser.add_argument('--dynamic', action='store_true')
     parser.add_argument('--max-num', type=int, default=6)
     parser.add_argument('--load-in-8bit', action='store_true')
-    parser.add_argument('--auto', action='store_true')
     args = parser.parse_args()
 
     if not os.path.exists(args.out_dir):
@@ -522,14 +553,11 @@ if __name__ == '__main__':
 
     torch.cuda.set_device(int(os.getenv('LOCAL_RANK', 0)))
 
-    if args.auto:
-        os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
-    kwargs = {'device_map': 'auto'} if args.auto else {}
     tokenizer = AutoTokenizer.from_pretrained(args.checkpoint, trust_remote_code=True, use_fast=False)
     model = InternVLChatModel.from_pretrained(
         args.checkpoint, low_cpu_mem_usage=True, torch_dtype=torch.bfloat16,
-        load_in_8bit=args.load_in_8bit, **kwargs).eval()
-    if not args.load_in_8bit and not args.auto:
+        load_in_8bit=args.load_in_8bit).eval()
+    if not args.load_in_8bit:
         model = model.cuda()
     image_size = model.config.force_image_size or model.config.vision_config.image_size
     use_thumbnail = model.config.use_thumbnail
