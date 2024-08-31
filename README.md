@@ -20,6 +20,8 @@
 <details open><summary>💡 Monkey series projects:✨. </summary><p>
 <!--  may -->
 
+The Monkey series is primarily focused on exploring techniques such as image resolution enhancement and token compression methods to improve the performance of existing multimodal large models. For instance, earlier versions of Monkey and TextMonkey were based on QwenVL, while MiniMonkey is based on InternVL2, among others. Any suggestions that could help us clarify the misunderstandings, especially avoiding the exaggeration of the contributions of the Monkey series, would be greatly appreciated.
+
 >[CVPR'24] [**Monkey: Image Resolution and Text Label Are Important Things for Large Multi-modal Models**](https://arxiv.org/abs/2311.06607)<br>
 > Zhang Li, Biao Yang, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, Yuliang Liu, Xiang Bai <br>
 [![Paper](https://img.shields.io/badge/Paper-CVPR'24_Highlight-red)](README.md)
