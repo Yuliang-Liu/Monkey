@@ -29,7 +29,7 @@ torchrun \
   --nproc_per_node=${GPUS} \
   --master_port=${MASTER_PORT} \
   internvl/train/minimonkey_chat_finetune.py \
-  --model_name_or_path "internvl_v2" \
+  --model_name_or_path "OpenGVLab/InternVL2-2B" \
   --conv_style "internlm2-chat" \
   --output_dir ${OUTPUT_DIR} \
   --meta_path "shell/data/internvl_1_2_finetune.json" \
@@ -51,7 +51,7 @@ torchrun \
   --save_strategy "steps" \
   --save_steps 1000 \
   --save_total_limit 1 \
-  --learning_rate 4e-8 \
+  --learning_rate 4e-9 \
   --weight_decay 0.01 \
   --warmup_ratio 0.03 \
   --lr_scheduler_type "cosine" \
