@@ -132,6 +132,8 @@ playground/
 │   │   └── images
 ```
 
+Download the pretrained model from [InternVL2-2B](https://huggingface.co/OpenGVLab/InternVL2-2B).
+
 Execute the training code:
 ```python
 sh shell/minimonkey/minimonkey_finetune_full.sh
