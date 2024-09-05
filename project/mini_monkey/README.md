@@ -71,7 +71,7 @@ python setup.py install
 
 ## Evaluate
 
-We use [VLMEvalKit](https://github.com/open-compass/VLMEvalKit) repositories for model evaluation. 
+We use [VLMEvalKit](https://github.com/open-compass/VLMEvalKit) repositories for model evaluation. Replace the [internvl_chat.py](https://github.com/open-compass/VLMEvalKit/blob/main/vlmeval/vlm/internvl_chat.py) in VLMEvalKit with this [file](https://huggingface.co/mx262/MiniMokney/blob/main/internvl_chat.py) and use the weight of [Mini-Monkey](https://huggingface.co/mx262/MiniMokney/tree/main).
 
 ## Inference
 We provide an example of inference code [here](https://github.com/Yuliang-Liu/Monkey/blob/main/project/mini_monkey/demo.py)
