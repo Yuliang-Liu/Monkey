@@ -20,8 +20,6 @@
 <details open><summary>💡 Monkey series projects:✨. </summary><p>
 <!--  may -->
 
-The Monkey series is primarily focused on exploring techniques such as image resolution enhancement and token compression methods to improve the performance of existing multimodal large models. For instance, earlier versions of Monkey and TextMonkey were based on QwenVL, while MiniMonkey is based on InternVL2, among others. Any suggestions that could help us clarify the misunderstandings, especially avoiding the exaggeration of the contributions of the Monkey series, would be greatly appreciated.
-
 >[CVPR'24] [**Monkey: Image Resolution and Text Label Are Important Things for Large Multi-modal Models**](https://arxiv.org/abs/2311.06607)<br>
 > Zhang Li, Biao Yang, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, Yuliang Liu, Xiang Bai <br>
 [![Paper](https://img.shields.io/badge/Paper-CVPR'24_Highlight-red)](README.md)
@@ -224,9 +222,9 @@ If you wish to refer to the baseline results published here, please use the foll
 ```
 
 ## Acknowledgement
-
-[Qwen-VL](https://github.com/QwenLM/Qwen-VL.git), [LLAMA](https://github.com/meta-llama/llama), [LLaVA](https://github.com/haotian-liu/LLaVA), [OpenCompass](https://github.com/open-compass/opencompass), [InternLM](https://github.com/InternLM/InternLM), [InternVL](https://github.com/OpenGVLab/InternVL). 
+The Monkey series is primarily focused on exploring techniques such as image resolution enhancement and token compression methods to improve the performance of existing multimodal large models. For instance, earlier versions of Monkey and TextMonkey were based on QwenVL, while MiniMonkey is based on InternVL2 and miniCPM, among others. Thanks to
+[Qwen-VL](https://github.com/QwenLM/Qwen-VL.git), [LLAMA](https://github.com/meta-llama/llama), [LLaVA](https://github.com/haotian-liu/LLaVA), [OpenCompass](https://github.com/open-compass/opencompass), [InternLM](https://github.com/InternLM/InternLM), and [InternVL](https://github.com/OpenGVLab/InternVL).  
 
 
 ## Copyright
-We welcome suggestions to help us improve the Monkey. For any query, please contact Dr. Yuliang Liu: ylliu@hust.edu.cn. If you find something interesting, please also feel free to share with us through email or open an issue. Thanks!
+Monkey project is intended for non-commercial use only. For commercial inquiries or to explore more advanced versions of the Monkey series LMMs (<1b, 2b, 7b, 72b), please contact Prof. Yuliang Liu at ylliu@hust.edu.cn. 
