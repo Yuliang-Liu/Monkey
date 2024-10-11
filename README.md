@@ -47,6 +47,11 @@
 [![Model Weight](https://img.shields.io/badge/Model_Weight-gray)](https://huggingface.co/mx262/MiniMokney)
 [![Model Weight in Wisemodel](https://img.shields.io/badge/Model_Weight_in_Wisemodel-gray)](https://www.wisemodel.cn/models/HUST-VLRLab/Mini-Monkey)
 
+> [**PDF-WuKong: A Large Multimodal Model for Efficient Long PDF Reading with End-to-End Sparse Sampling**](https://arxiv.org/abs/2410.05970)<br>
+> Xudong Xie, Liang Yin, Hao Yan, Yang Liu, Jing Ding, Minghui Liao, Yuliang Liu, Wei Chen, Xiang Bai <br>
+[![arXiv](https://img.shields.io/badge/Arxiv-2410.05970-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2410.05970)
+[![Source_code](https://img.shields.io/badge/Code-Available-white)](https://github.com/yh-hust/PDF-Wukong)
+
 ## News 
 * ```2024.10.10``` 🚀 We release the paper [PDF-WuKong](https://arxiv.org/abs/2410.05970).
 * ```2024.8.13 ``` 🚀 Sourced code for [Mini-Monkey](project/mini_monkey) is released.
