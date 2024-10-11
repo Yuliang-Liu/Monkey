@@ -48,6 +48,7 @@
 [![Model Weight in Wisemodel](https://img.shields.io/badge/Model_Weight_in_Wisemodel-gray)](https://www.wisemodel.cn/models/HUST-VLRLab/Mini-Monkey)
 
 ## News 
+* ```2024.10.10``` 🚀 We release the paper [PDF-WuKong](https://arxiv.org/abs/2410.05970).
 * ```2024.8.13 ``` 🚀 Sourced code for [Mini-Monkey](project/mini_monkey) is released.
 * ```2024.8.6  ``` 🚀 We release the paper [Mini-Monkey](https://arxiv.org/abs/2408.02034).
 * ```2024.4.13 ``` 🚀 Sourced code for [TextMonkey](monkey_model/text_monkey/README.md) is released.
