@@ -50,6 +50,8 @@
 > [**PDF-WuKong: A Large Multimodal Model for Efficient Long PDF Reading with End-to-End Sparse Sampling**](https://arxiv.org/abs/2410.05970)<br>
 > Xudong Xie, Liang Yin, Hao Yan, Yang Liu, Jing Ding, Minghui Liao, Yuliang Liu, Wei Chen, Xiang Bai <br>
 [![arXiv](https://img.shields.io/badge/Arxiv-2410.05970-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2410.05970)
+[![Source_code](https://img.shields.io/badge/GithubPage-InProgress...-white)](https://github.com/yh-hust/PDF-Wukong)
+
 
 
 ## News 
