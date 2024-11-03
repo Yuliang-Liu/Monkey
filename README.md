@@ -55,7 +55,7 @@
 > [**R-CoT: Reverse Chain-of-Thought Problem Generation for Geometric Reasoning in Large Multimodal Models**](https://arxiv.org/abs/2410.17885)<br>
 > Linger Deng, Yuliang Liu, Bohan Li, Dongliang Luo, Liang Wu, Chengquan Zhang, Pengyuan Lyu, Ziyang Zhang, Gang Zhang, Errui Ding, Yingying Zhu, Xiang Bai <br>
 [![arXiv](https://img.shields.io/badge/Arxiv-2410.17885-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2410.17885)
-[![Source_code](https://img.shields.io/badge/Code-white)](https://github.com/dle666/R-CoT)
+[![Source_code](https://img.shields.io/badge/Code-Available-white)](https://github.com/dle666/R-CoT)
 
 
 
