@@ -60,6 +60,7 @@
 
 
 ## News 
+* ```2024.10.23``` 🚀 We release the paper [R-CoT](https://arxiv.org/abs/2410.17885).
 * ```2024.10.10``` 🚀 We release the paper [PDF-WuKong](https://arxiv.org/abs/2410.05970).
 * ```2024.8.13 ``` 🚀 Sourced code for [Mini-Monkey](project/mini_monkey) is released.
 * ```2024.8.6  ``` 🚀 We release the paper [Mini-Monkey](https://arxiv.org/abs/2408.02034).
