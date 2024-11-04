@@ -233,6 +233,12 @@ If you wish to refer to the baseline results published here, please use the foll
   journal={arXiv preprint arXiv:2408.02034},
   year={2024}
 }
+@article{deng2024r,
+  title={R-CoT: Reverse Chain-of-Thought Problem Generation for Geometric Reasoning in Large Multimodal Models},
+  author={Deng, Linger and Liu, Yuliang and Li, Bohan and Luo, Dongliang and Wu, Liang and Zhang, Chengquan and Lyu, Pengyuan and Zhang, Ziyang and Zhang, Gang and Ding, Errui and others},
+  journal={arXiv preprint arXiv:2410.17885},
+  year={2024}
+}
 ```
 
 ## Acknowledgement
