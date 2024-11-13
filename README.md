@@ -20,48 +20,12 @@
 <details open><summary>💡 Monkey series projects:✨. </summary><p>
 <!--  may -->
 
->[CVPR'24] [**Monkey: Image Resolution and Text Label Are Important Things for Large Multi-modal Models**](https://arxiv.org/abs/2311.06607)<br>
-> Zhang Li, Biao Yang, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, Yuliang Liu, Xiang Bai <br>
-[![Paper](https://img.shields.io/badge/Paper-CVPR'24_Highlight-red)](README.md)
-[![Source_code](https://img.shields.io/badge/Code-Available-white)](README.md)
-[![Demo](https://img.shields.io/badge/Demo-blue)](http://vlrlab-monkey.xyz:7681/)
-[![Detailed Caption](https://img.shields.io/badge/Detailed_Caption-yellow)](http://huggingface.co/datasets/echo840/Detailed_Caption)
-[![Model Weight](https://img.shields.io/badge/Model_Weight-gray)](http://huggingface.co/echo840/Monkey)
-[![Model Weight in Wisemodel](https://img.shields.io/badge/Model_Weight_in_Wisemodel-gray)](https://www.wisemodel.cn/models/HUST-VLRLab/Monkey/)
-[![Demo in Wisemodel](https://img.shields.io/badge/Demo_in_Wisemodel-blue)](https://wisemodel.cn/space/gradio/huakeMonkey)
-
-
-
-> [**TextMonkey: An OCR-Free Large Multimodal Model for Understanding Document**](https://arxiv.org/abs/2403.04473)<br>
-> Yuliang Liu, Biao Yang, Qiang Liu, Zhang Li, Zhiyin Ma, Shuo Zhang, Xiang Bai <br>
-[![arXiv](https://img.shields.io/badge/Arxiv-2403.04473-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2403.04473) 
-[![Source_code](https://img.shields.io/badge/Code-Available-white)](monkey_model/text_monkey/README.md)
-[![Data](https://img.shields.io/badge/Data-yellow)](https://huggingface.co/datasets/MelosY/TextMonkey_Data/tree/main)
-[![Model Weight](https://img.shields.io/badge/Model_Weight-gray)](https://www.modelscope.cn/models/lvskiller/TextMonkey)
-
-> [**Mini-Monkey: Multi-Scale Adaptive Cropping for Multimodal Large Language Models**](https://arxiv.org/pdf/2408.02034)<br>
-> Mingxin Huang, Yuliang Liu, Dingkang Liang, Lianwen Jin, Xiang Bai <br>
-[![arXiv](https://img.shields.io/badge/Arxiv-2408.02034-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2408.02034)
-[![Source_code](https://img.shields.io/badge/Code-Available-white)](project/mini_monkey)
-[![Demo](https://img.shields.io/badge/Demo-blue)](http://vlrlab-monkey.xyz:7685)
-[![Model Weight](https://img.shields.io/badge/Model_Weight-gray)](https://huggingface.co/mx262/MiniMokney)
-[![Model Weight in Wisemodel](https://img.shields.io/badge/Model_Weight_in_Wisemodel-gray)](https://www.wisemodel.cn/models/HUST-VLRLab/Mini-Monkey)
-
-> [**PDF-WuKong: A Large Multimodal Model for Efficient Long PDF Reading with End-to-End Sparse Sampling**](https://arxiv.org/abs/2410.05970)<br>
-> Xudong Xie, Liang Yin, Hao Yan, Yang Liu, Jing Ding, Minghui Liao, Yuliang Liu, Wei Chen, Xiang Bai <br>
-[![arXiv](https://img.shields.io/badge/Arxiv-2410.05970-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2410.05970)
-[![Source_code](https://img.shields.io/badge/GithubPage-InProgress...-white)](https://github.com/yh-hust/PDF-Wukong)
-
-> [**R-CoT: Reverse Chain-of-Thought Problem Generation for Geometric Reasoning in Large Multimodal Models**](https://arxiv.org/abs/2410.17885)<br>
-> Linger Deng, Yuliang Liu, Bohan Li, Dongliang Luo, Liang Wu, Chengquan Zhang, Pengyuan Lyu, Ziyang Zhang, Gang Zhang, Errui Ding, Yingying Zhu, Xiang Bai <br>
-[![arXiv](https://img.shields.io/badge/Arxiv-2410.17885-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2410.17885)
-[![Source_code](https://img.shields.io/badge/Code-Available-white)](https://github.com/dle666/R-CoT)
-
+* [Monkey](README.md)
+* [TextMonkey](monkey_model/text_monkey/README.md)
+* [Mini-Monkey](project/mini_monkey)
 
 
 ## News 
-* ```2024.10.23``` 🚀 We release the paper [R-CoT](https://arxiv.org/abs/2410.17885).
-* ```2024.10.10``` 🚀 We release the paper [PDF-WuKong](https://arxiv.org/abs/2410.05970).
 * ```2024.8.13 ``` 🚀 Sourced code for [Mini-Monkey](project/mini_monkey) is released.
 * ```2024.8.6  ``` 🚀 We release the paper [Mini-Monkey](https://arxiv.org/abs/2408.02034).
 * ```2024.4.13 ``` 🚀 Sourced code for [TextMonkey](monkey_model/text_monkey/README.md) is released.
