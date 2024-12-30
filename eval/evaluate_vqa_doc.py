@@ -118,8 +118,8 @@ def evaluateANLS(ans_list):
         
         value_list = []
         for gt_single in gt_list:
-            if gt_single.strip().lower() in answer.strip().lower():
-                value_list.append(0)
+            # if gt_single.strip().lower() in answer.strip().lower():
+            #     value_list.append(0)
             value_list.append(normANLS(gt_single,answer))
         question_result = 1 - min(value_list)
 
