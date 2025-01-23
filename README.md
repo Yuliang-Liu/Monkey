@@ -26,6 +26,7 @@
 
 
 ## News 
+* ```2025.1.23 ``` 🚀 Mini-Monkey is accepted by ICLR 2025. 
 * ```2024.11.27``` 🚀 Thanks to [Fahd Mirza](https://www.youtube.com/@fahdmirza) for sharing a [video](https://www.youtube.com/watch?v=NY3YzrhD4EM) on how to run Monkey.
 * ```2024.8.13 ``` 🚀 Sourced code for [Mini-Monkey](project/mini_monkey) is released.
 * ```2024.8.6  ``` 🚀 We release the paper [Mini-Monkey](https://arxiv.org/abs/2408.02034).
