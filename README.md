@@ -40,7 +40,7 @@
 > Mingxin Huang, Yuliang Liu, Dingkang Liang, Lianwen Jin, Xiang Bai <br>
 [![arXiv](https://img.shields.io/badge/Arxiv-2408.02034-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2408.02034)
 [![Source_code](https://img.shields.io/badge/Code-Available-white)](project/mini_monkey)
-[![Model Weight in Wisemodel](https://img.shields.io/badge/Model_Weight-gray)](https://www.wisemodel.cn/models/HUST-VLRLab/Mini-Monkey)
+[![Model Weight in Wisemodel](https://img.shields.io/badge/Model_Weight_in_Wisemodel-gray)](https://www.wisemodel.cn/models/HUST-VLRLab/Mini-Monkey)
 [![Model Weight](https://img.shields.io/badge/Model_Weight-gray)](https://huggingface.co/mx262/MiniMokney)
 
 
