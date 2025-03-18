@@ -19,7 +19,7 @@
 
 
 
-> [**Monkey: Image Resolution and Text Label Are Important Things for Large Multi-modal Models**](https://arxiv.org/abs/2311.06607)<br>
+> [**[CVPR 2024] Monkey: Image Resolution and Text Label Are Important Things for Large Multi-modal Models**](https://arxiv.org/abs/2311.06607)<br>
 > Zhang Li, Biao Yang, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, Yuliang Liu, Xiang Bai <br>
 [![arXiv](https://img.shields.io/badge/Arxiv-2403.04473-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2311.06607) 
 [![Source_code](https://img.shields.io/badge/Code-Available-white)](README.md)
@@ -36,7 +36,13 @@
 [![Data](https://img.shields.io/badge/Data-yellow)](https://huggingface.co/datasets/MelosY/TextMonkey_Data/tree/main)
 [![Model Weight](https://img.shields.io/badge/Model_Weight-gray)](https://www.modelscope.cn/models/lvskiller/TextMonkey)
 
-> [**Mini-Monkey: Multi-Scale Adaptive Cropping for Multimodal Large Language Models**](https://arxiv.org/pdf/2408.02034)<br>
+> [**[NeurIPS 2024] MoE Jetpack: From Dense Checkpoints to Adaptive Mixture of Experts for Vision Tasks**](https://arxiv.org/abs/2406.04801)<br>
+> Mingxin Huang, Yuliang Liu, Dingkang Liang, Lianwen Jin, Xiang Bai <br>
+[![arXiv](https://img.shields.io/badge/Arxiv-2406.04801-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2406.04801)
+[![Source_code](https://img.shields.io/badge/Code-Available-white)](https://github.com/Adlith/MoE-Jetpack?tab=readme-ov-file)
+
+
+> [**[ICLR 2025] Mini-Monkey: Multi-Scale Adaptive Cropping for Multimodal Large Language Models**](https://arxiv.org/pdf/2408.02034)<br>
 > Mingxin Huang, Yuliang Liu, Dingkang Liang, Lianwen Jin, Xiang Bai <br>
 [![arXiv](https://img.shields.io/badge/Arxiv-2408.02034-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2408.02034)
 [![Source_code](https://img.shields.io/badge/Code-Available-white)](project/mini_monkey)
@@ -46,10 +52,8 @@
 
 ## News 
 * ```2025.1.23 ``` 🚀 Mini-Monkey is accepted by ICLR 2025. 
-* ```2024.11.27``` 🚀 Thanks to [Fahd Mirza](https://www.youtube.com/@fahdmirza) for sharing a [video](https://www.youtube.com/watch?v=NY3YzrhD4EM) on how to run Monkey.
-* ```2024.8.13 ``` 🚀 Sourced code for [Mini-Monkey](project/mini_monkey) is released.
+* ```2024.9.25 ``` 🚀 MoE Jetpack is accepted by NeurIPS 2024.
 * ```2024.8.6  ``` 🚀 We release the paper [Mini-Monkey](https://arxiv.org/abs/2408.02034).
-* ```2024.4.13 ``` 🚀 Sourced code for [TextMonkey](monkey_model/text_monkey/README.md) is released.
 * ```2024.4.5  ``` 🚀 Monkey is nominated as CVPR 2024 Highlight paper.
 * ```2024.3.8  ``` 🚀 We release the paper [TextMonkey](https://arxiv.org/abs/2403.04473).
 * ```2024.2.27 ``` 🚀 Monkey is accepted by CVPR 2024. 
