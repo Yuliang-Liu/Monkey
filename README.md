@@ -37,7 +37,7 @@
 [![Model Weight](https://img.shields.io/badge/Model_Weight-gray)](https://www.modelscope.cn/models/lvskiller/TextMonkey)
 
 > [**[NeurIPS 2024] MoE Jetpack: From Dense Checkpoints to Adaptive Mixture of Experts for Vision Tasks**](https://arxiv.org/abs/2406.04801)<br>
-> Mingxin Huang, Yuliang Liu, Dingkang Liang, Lianwen Jin, Xiang Bai <br>
+> Xingkui Zhu, Yiran Guan, Dingkang Liang, Yuchao Chen, Yuliang Liu, Xiang Bai <br>
 [![arXiv](https://img.shields.io/badge/Arxiv-2406.04801-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2406.04801)
 [![Source_code](https://img.shields.io/badge/Code-Available-white)](https://github.com/Adlith/MoE-Jetpack?tab=readme-ov-file)
 
