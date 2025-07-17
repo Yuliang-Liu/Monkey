@@ -54,6 +54,12 @@
 [![arXiv](https://img.shields.io/badge/Arxiv-2412.04332-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2412.04332)
 [![Source_code](https://img.shields.io/badge/Code-Available-white)](https://github.com/FoundationVision/Liquid)
 
+> [**[ICCV 2025] LIRA: Inferring Segmentation in Large Multi-modal Models with Local Interleaved Region Assistance**](https://arxiv.org/abs/2507.06272)<br>
+> Zhang Li, Biao Yang, Qiang Liu, Shuo Zhang, Zhiyin Ma, Shuo Zhang, Liang Yin, Linger Deng, Yabo Sun, Yuliang Liu, Xiang Bai<br>
+[![arXiv](https://img.shields.io/badge/Arxiv-2507.06272-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2507.06272) 
+[![Source_code](https://img.shields.io/badge/Code-Available-white)](https://github.com/echo840/LIRA)
+
+ 
 > [**MonkeyOCR: Document Parsing with a Structure-Recognition-Relation Triplet Paradigm**](https://arxiv.org/abs/2506.05218)<br>
 > Zhang Li, Yuliang Liu, Qiang Liu, Zhiyin Ma, Ziyang Zhang, Shuo Zhang, Zidun Guo, Jiarui Zhang, Xinyu Wang, Xiang Bai<br>
 [![arXiv](https://img.shields.io/badge/Arxiv-2506.05218-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2506.05218) 
@@ -63,7 +69,7 @@
 >
 > 
 ## News 
-* ```2025.6.6 ``` 🚀 [MonkeyOCR](https://arxiv.org/abs/2506.0521): Try our document parsing model — Accurate, Fast, and Easy to Use.
+* ```2025.6.6 ``` 🚀 [MonkeyOCR](https://github.com/Yuliang-Liu/MonkeyOCR): Try our document parsing model — Accurate, Fast, and Easy to Use.
 * ```2025.4.17 ``` 🚀 [Liquid](https://arxiv.org/abs/2412.04332): Bridging Text‑to‑Image and Image‑to‑Text in One Framework.
 * ```2025.1.23 ``` 🚀 Mini-Monkey is accepted by ICLR 2025. 
 * ```2024.9.25 ``` 🚀 MoE Jetpack is accepted by NeurIPS 2024.
