@@ -1,69 +1,6 @@
-<h3 align="center"> <a href="https://arxiv.org/abs/2311.06607">Monkey: Image Resolution and Text Label Are Important Things for Large Multi-modal Models</a></h3>
+<h3 align="center"> <a href="https://arxiv.org/abs/2311.06607"> [CVPR 2024] Monkey: Image Resolution and Text Label Are Important Things for Large Multi-modal Models</a></h3>
 <h2></h2>
 
-<h5 align="center"> Please give us a star ⭐ for the latest update.  </h5>
-
-<h5 align="center">
-
- 
-[![arXiv](https://img.shields.io/badge/Arxiv-2311.06607-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2311.06607) 
-[![License](https://img.shields.io/badge/License-Apache%202.0-yellow)](https://github.com/Yuliang-Liu/Monkey/blob/main/LICENSE) 
-[![GitHub issues](https://img.shields.io/github/issues/Yuliang-Liu/Monkey?color=critical&label=Issues)](https://github.com/Yuliang-Liu/Monkey/issues?q=is%3Aopen+is%3Aissue)
-[![GitHub closed issues](https://img.shields.io/github/issues-closed/Yuliang-Liu/Monkey?color=success&label=Issues)](https://github.com/Yuliang-Liu/Monkey/issues?q=is%3Aissue+is%3Aclosed)  <br>
-</h5>
-
-
-
-
-> [**[CVPR 2024] Monkey: Image Resolution and Text Label Are Important Things for Large Multi-modal Models**](https://arxiv.org/abs/2311.06607)<br>
-> Zhang Li, Biao Yang, Qiang Liu, Zhiyin Ma, Shuo Zhang, Jingxu Yang, Yabo Sun, Yuliang Liu, Xiang Bai <br>
-[![arXiv](https://img.shields.io/badge/Arxiv-2403.04473-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2311.06607) 
-[![Source_code](https://img.shields.io/badge/Code-Available-white)](README.md)
-[![Detailed Caption](https://img.shields.io/badge/Detailed_Caption-yellow)](http://huggingface.co/datasets/echo840/Detailed_Caption)
-[![Model Weight](https://img.shields.io/badge/Model_Weight-gray)](http://huggingface.co/echo840/Monkey)
-[![Model Weight in Wisemodel](https://img.shields.io/badge/Model_Weight_in_Wisemodel-gray)](https://www.wisemodel.cn/models/HUST-VLRLab/Monkey/)
-
-
-
-> [**[TPAMI 2026] TextMonkey: An OCR-Free Large Multimodal Model for Understanding Document**](https://arxiv.org/abs/2403.04473)<br>
-> Yuliang Liu, Biao Yang, Qiang Liu, Zhang Li, Zhiyin Ma, Shuo Zhang, Xiang Bai <br>
-[![arXiv](https://img.shields.io/badge/Arxiv-2403.04473-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2403.04473) 
-[![Source_code](https://img.shields.io/badge/Code-Available-white)](monkey_model/text_monkey/README.md)
-[![Data](https://img.shields.io/badge/Data-yellow)](https://huggingface.co/datasets/MelosY/TextMonkey_Data/tree/main)
-[![Model Weight](https://img.shields.io/badge/Model_Weight-gray)](https://www.modelscope.cn/models/lvskiller/TextMonkey)
-
-> [**[NeurIPS 2024] MoE Jetpack: From Dense Checkpoints to Adaptive Mixture of Experts for Vision Tasks**](https://arxiv.org/abs/2406.04801)<br>
-> Xingkui Zhu, Yiran Guan, Dingkang Liang, Yuchao Chen, Yuliang Liu, Xiang Bai <br>
-[![arXiv](https://img.shields.io/badge/Arxiv-2406.04801-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2406.04801)
-[![Source_code](https://img.shields.io/badge/Code-Available-white)](https://github.com/Adlith/MoE-Jetpack?tab=readme-ov-file)
-
-
-> [**[ICLR 2025] Mini-Monkey: Multi-Scale Adaptive Cropping for Multimodal Large Language Models**](https://arxiv.org/pdf/2408.02034)<br>
-> Mingxin Huang, Yuliang Liu, Dingkang Liang, Lianwen Jin, Xiang Bai <br>
-[![arXiv](https://img.shields.io/badge/Arxiv-2408.02034-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2408.02034)
-[![Source_code](https://img.shields.io/badge/Code-Available-white)](project/mini_monkey)
-[![Model Weight in Wisemodel](https://img.shields.io/badge/Model_Weight_in_Wisemodel-gray)](https://www.wisemodel.cn/models/HUST-VLRLab/Mini-Monkey)
-[![Model Weight](https://img.shields.io/badge/Model_Weight-gray)](https://huggingface.co/mx262/MiniMokney)
-
-> [**[IJCV 2025] Liquid: Language Models are Scalable and Unified Multi-modal Generators**](https://arxiv.org/pdf/2408.02034)<br>
-> Junfeng Wu, Yi Jiang, Chuofan Ma, Yuliang Liu, Hengshuang Zhao, Zehuan Yuan, Song Bai, Xiang Bai<br>
-[![arXiv](https://img.shields.io/badge/Arxiv-2412.04332-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2412.04332)
-[![Source_code](https://img.shields.io/badge/Code-Available-white)](https://github.com/FoundationVision/Liquid)
-
-> [**[ICCV 2025] LIRA: Inferring Segmentation in Large Multi-modal Models with Local Interleaved Region Assistance**](https://arxiv.org/abs/2507.06272)<br>
-> Zhang Li, Biao Yang, Qiang Liu, Shuo Zhang, Zhiyin Ma, Shuo Zhang, Liang Yin, Linger Deng, Yabo Sun, Yuliang Liu, Xiang Bai<br>
-[![arXiv](https://img.shields.io/badge/Arxiv-2507.06272-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2507.06272) 
-[![Source_code](https://img.shields.io/badge/Code-Available-white)](https://github.com/echo840/LIRA)
-
- 
-> [**MonkeyOCR: Document Parsing with a Structure-Recognition-Relation Triplet Paradigm**](https://arxiv.org/abs/2506.05218)<br>
-> Zhang Li, Yuliang Liu, Qiang Liu, Zhiyin Ma, Ziyang Zhang, Shuo Zhang, Zidun Guo, Jiarui Zhang, Xinyu Wang, Xiang Bai<br>
-[![arXiv](https://img.shields.io/badge/Arxiv-2506.05218-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2506.05218) 
-[![Source_code](https://img.shields.io/badge/Code-Available-white)](https://github.com/Yuliang-Liu/MonkeyOCR)
-[![Model Weight](https://img.shields.io/badge/Model_Weight-gray)](https://huggingface.co/echo840/MonkeyOCR)
-[![Demo](https://img.shields.io/badge/Demo-blue)](http://vlrlabmonkey.xyz:7685/)
->
-> 
 ## News 
 * ```2025.6.6 ``` 🚀 [MonkeyOCR](https://github.com/Yuliang-Liu/MonkeyOCR): Try our document parsing model — Accurate, Fast, and Easy to Use.
 * ```2025.4.17 ``` 🚀 [Liquid](https://arxiv.org/abs/2412.04332): Bridging Text‑to‑Image and Image‑to‑Text in One Framework.
@@ -224,14 +161,6 @@ If you wish to refer to the baseline results published here, please use the foll
   pages={26763--26773},
   year={2024}
 }
-@article{zhu2024moe,
-  title={Moe jetpack: From dense checkpoints to adaptive mixture of experts for vision tasks},
-  author={Zhu, Xingkui and Guan, Yiran and Liang, Dingkang and Chen, Yuchao and Liu, Yuliang and Bai, Xiang},
-  journal={Advances in Neural Information Processing Systems},
-  volume={37},
-  pages={12094--12118},
-  year={2024}
-}
 @article{liu2024textmonkey,
   title={TextMonkey: An OCR-Free Large Multimodal Model for Understanding Document},
   author={Liu, Yuliang and Yang, Biao and Liu, Qiang and Li, Zhang and Ma, Zhiyin and Zhang, Shuo and Bai, Xiang},
@@ -244,34 +173,11 @@ If you wish to refer to the baseline results published here, please use the foll
   journal={International Conference on Learning Representations},
   year={2024}
 }
-@article{deng2024r,
-  title={R-CoT: Reverse Chain-of-Thought Problem Generation for Geometric Reasoning in Large Multimodal Models},
-  author={Deng, Linger and Liu, Yuliang and Li, Bohan and Luo, Dongliang and Wu, Liang and Zhang, Chengquan and Lyu, Pengyuan and Zhang, Ziyang and Zhang, Gang and Ding, Errui and others},
-  journal={Conference on Empirical Methods in Natural Language Processing},
-  year={2024}
-}
-@article{wu2026liquid,
-  title={Liquid: Language models are scalable and unified multi-modal generators},
-  author={Wu, Junfeng and Jiang, Yi and Ma, Chuofan and Liu, Yuliang and Zhao, Hengshuang and Yuan, Zehuan and Bai, Song and Bai, Xiang},
-  journal={International Journal of Computer Vision},
-  volume={134},
-  number={1},
-  pages={39},
-  year={2026},
-  publisher={Springer}
-}
-@inproceedings{li2025lira,
-  title={LIRA: Inferring Segmentation in Large Multi-modal Models with Local Interleaved Region Assistance},
-  author={Li, Zhang and Yang, Biao and Liu, Qiang and Zhang, Shuo and Ma, Zhiyin and Yin, Liang and Deng, Linger and Sun, Yabo and Liu, Yuliang and Bai, Xiang},
-  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
-  pages={24056--24067},
-  year={2025}
-}
 @article{li2025monkeyocr,
   title={MonkeyOCR: Document Parsing with a Structure-Recognition-Relation Triplet Paradigm},
   author={Li, Zhang and Liu, Yuliang and Liu, Qiang and Ma, Zhiyin and Zhang, Ziyang and Zhang, Shuo and Guo, Zidun and Zhang, Jiarui and Wang, Xinyu and Bai, Xiang},
-  journal={arXiv preprint arXiv:2506.05218},
-  year={2025}
+  journal={SCIENCE CHINA Information Sciences},
+  year={2026}
 }
 ```
 
